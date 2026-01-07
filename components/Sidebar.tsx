@@ -92,7 +92,7 @@ export default function Sidebar() {
       <SidebarHeader>
         <Link
           href="/"
-          className="text-2xl font-bold tracking-[2px] uppercase block"
+          className="text-2xl font-[900] tracking-[2px] uppercase block"
         >
           {locale === 'zh' ? '郗海飞' : 'XI HAIFEI'}
         </Link>

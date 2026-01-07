@@ -36,7 +36,7 @@ export default function FilterBar({
   ];
 
   return (
-    <div className="flex flex-wrap gap-6 md:gap-8 px-5 md:px-10 py-5 border-b border-border">
+    <div className="flex flex-wrap gap-6 md:gap-8 py-5 border-b border-border">
       {/* Category Filter - ToggleGroup */}
       <ToggleGroup
         type="single"

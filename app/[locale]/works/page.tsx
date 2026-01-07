@@ -30,7 +30,7 @@ export default function WorksPage() {
   return (
     <div className="min-h-screen">
       {/* Page Title */}
-      <div className="px-5 md:px-10 pt-10 pb-5">
+      <div className="pb-5">
         <h1 className="text-[15px] font-bold uppercase tracking-[1px]">
           {t('title')}
         </h1>

@@ -47,7 +47,7 @@ export default async function LocaleLayout({ children, params }: Props) {
                   <Menu className="h-6 w-6" />
                 </SidebarTrigger>
               </header>
-              <main>
+              <main className="p-6">
                 {children}
               </main>
             </SidebarInset>

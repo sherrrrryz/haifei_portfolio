@@ -18,7 +18,7 @@ function AboutContent({ locale }: { locale: string }) {
   const lang = locale as 'zh' | 'en';
 
   return (
-    <div className="min-h-screen px-5 md:px-10 py-10 md:py-16 max-w-[800px]">
+    <div className="min-h-screen max-w-[800px]">
       {/* Title */}
       <h1 className="text-[15px] font-bold uppercase tracking-[1px] mb-10">
         {t('title')}

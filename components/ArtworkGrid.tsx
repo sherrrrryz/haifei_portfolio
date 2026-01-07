@@ -30,7 +30,7 @@ export default function ArtworkGrid({ artworks }: ArtworkGridProps) {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 p-10 md:p-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 pt-6">
         {artworks.map((artwork, index) => (
           <ArtworkCard
             key={artwork.id}

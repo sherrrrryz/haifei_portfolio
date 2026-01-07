@@ -4,7 +4,6 @@ import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 import artworksData from '@/data/artworks.json';
 import type { Artwork } from '@/lib/types';
-import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 
@@ -26,31 +25,9 @@ function HomeContent({ locale }: { locale: string }) {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="h-screen flex flex-col justify-center items-center px-5 md:px-10">
-        <h1 className="text-4xl md:text-6xl font-bold tracking-[4px] uppercase mb-4">
-          {t('title')}
-        </h1>
-        <p className="text-lg md:text-xl text-muted-foreground mb-10">
-          {t('subtitle')}
-        </p>
-        <Button
-          asChild
-          variant="outline"
-          className={cn(
-            'text-[15px] font-bold uppercase px-8 py-3 h-auto',
-            'rounded-none border-foreground',
-            'hover:bg-foreground hover:text-background',
-            'transition-all duration-300'
-          )}
-        >
-          <Link href="/works">{t('viewWorks')}</Link>
-        </Button>
-      </section>
-
       {/* Featured Works */}
-      <section className="px-5 md:px-10 pb-20">
-        <h2 className="text-[15px] font-bold uppercase tracking-[1px] mb-10 text-center">
+      <section>
+        <h2 className="text-2xl font-bold uppercase tracking-[2px] mb-10">
           {t('featuredWorks')}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
