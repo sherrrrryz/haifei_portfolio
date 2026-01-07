@@ -3,6 +3,8 @@
 import Image from 'next/image';
 import { useLocale } from 'next-intl';
 import type { Artwork } from '@/lib/types';
+import { Card, CardContent } from '@/components/ui/card';
+import { cn } from '@/lib/utils';
 
 interface ArtworkCardProps {
   artwork: Artwork;
@@ -14,27 +16,36 @@ export default function ArtworkCard({ artwork, onClick }: ArtworkCardProps) {
   const title = locale === 'en' && artwork.titleEn ? artwork.titleEn : artwork.title;
 
   return (
-    <article
-      className="group cursor-pointer"
+    <Card
+      className={cn(
+        'group cursor-pointer border-none shadow-none rounded-none bg-transparent',
+        'transition-transform duration-300'
+      )}
       onClick={onClick}
     >
-      <div className="relative overflow-hidden">
-        <Image
-          src={artwork.imageUrl}
-          alt={title}
-          width={800}
-          height={600}
-          className="w-full aspect-[4/3] object-cover transition-transform duration-[0.4s] ease-out group-hover:scale-[1.02]"
-        />
-      </div>
-      <div className="pt-4">
-        <h3 className="text-[15px] font-bold uppercase leading-[19px] mb-1">
-          {title}
-        </h3>
-        <p className="text-[13px] text-[#999] leading-[1.4]">
-          {artwork.year} · {artwork.dimensions}
-        </p>
-      </div>
-    </article>
+      <CardContent className="p-0">
+        <div className="relative overflow-hidden">
+          <Image
+            src={artwork.imageUrl}
+            alt={title}
+            width={800}
+            height={600}
+            className={cn(
+              'w-full aspect-[4/3] object-cover',
+              'transition-transform duration-[0.4s] ease-out',
+              'group-hover:scale-[1.02]'
+            )}
+          />
+        </div>
+        <div className="pt-4">
+          <h3 className="text-[15px] font-bold uppercase leading-[19px] mb-1">
+            {title}
+          </h3>
+          <p className="text-[13px] text-muted-foreground leading-[1.4]">
+            {artwork.year} · {artwork.dimensions}
+          </p>
+        </div>
+      </CardContent>
+    </Card>
   );
 }

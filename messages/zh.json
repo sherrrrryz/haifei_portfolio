@@ -30,7 +30,8 @@
     "year": "年份",
     "close": "关闭",
     "prev": "上一幅",
-    "next": "下一幅"
+    "next": "下一幅",
+    "viewingArtwork": "正在查看作品"
   },
   "footer": {
     "copyright": "© 2024 郗海飞 版权所有"

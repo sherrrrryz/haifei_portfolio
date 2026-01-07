@@ -30,7 +30,8 @@
     "year": "Year",
     "close": "Close",
     "prev": "Previous",
-    "next": "Next"
+    "next": "Next",
+    "viewingArtwork": "Viewing artwork"
   },
   "footer": {
     "copyright": "© 2024 Xi Haifei. All rights reserved."

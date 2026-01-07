@@ -2,6 +2,15 @@
 
 import { useTranslations } from 'next-intl';
 import type { ArtworkCategory } from '@/lib/types';
+import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
+import { cn } from '@/lib/utils';
 
 interface FilterBarProps {
   years: number[];
@@ -27,39 +36,58 @@ export default function FilterBar({
   ];
 
   return (
-    <div className="flex flex-wrap gap-6 md:gap-8 px-5 md:px-10 py-5 border-b border-[#eee]">
-      {/* Category Filter */}
-      <div className="flex items-center gap-4">
+    <div className="flex flex-wrap gap-6 md:gap-8 px-5 md:px-10 py-5 border-b border-border">
+      {/* Category Filter - ToggleGroup */}
+      <ToggleGroup
+        type="single"
+        value={selectedCategory}
+        onValueChange={(value) => value && onCategoryChange(value as ArtworkCategory)}
+        className="gap-4"
+      >
         {categories.map((cat) => (
-          <button
+          <ToggleGroupItem
             key={cat.value}
-            onClick={() => onCategoryChange(cat.value)}
-            className={`text-[13px] font-bold uppercase transition-colors duration-300 ${
-              selectedCategory === cat.value
-                ? 'text-black'
-                : 'text-[#999] hover:text-black'
-            }`}
+            value={cat.value}
+            className={cn(
+              'text-[13px] font-bold uppercase',
+              'transition-colors duration-300',
+              'hover:bg-transparent hover:text-foreground',
+              'data-[state=on]:bg-transparent data-[state=on]:text-foreground',
+              'data-[state=off]:text-muted-foreground',
+              'px-0 h-auto rounded-none border-none'
+            )}
           >
             {cat.label}
-          </button>
+          </ToggleGroupItem>
         ))}
-      </div>
+      </ToggleGroup>
 
-      {/* Year Filter */}
-      <div className="flex items-center gap-2">
-        <select
-          value={selectedYear ?? ''}
-          onChange={(e) => onYearChange(e.target.value ? Number(e.target.value) : null)}
-          className="text-[13px] font-bold uppercase bg-transparent border border-[#ddd] px-3 py-2 cursor-pointer focus:outline-none focus:border-black transition-colors"
+      {/* Year Filter - Select */}
+      <Select
+        value={selectedYear?.toString() ?? ''}
+        onValueChange={(value) => onYearChange(value ? Number(value) : null)}
+      >
+        <SelectTrigger
+          className={cn(
+            'w-[120px] text-[13px] font-bold uppercase',
+            'border-muted-foreground/30 rounded-none',
+            'focus:ring-0 focus:ring-offset-0 focus:border-foreground',
+            'transition-colors duration-300'
+          )}
         >
-          <option value="">{t('allYears')}</option>
+          <SelectValue placeholder={t('allYears')} />
+        </SelectTrigger>
+        <SelectContent className="rounded-none">
+          <SelectItem value="all" className="text-[13px] font-bold uppercase">
+            {t('allYears')}
+          </SelectItem>
           {years.map((year) => (
-            <option key={year} value={year}>
+            <SelectItem key={year} value={year.toString()} className="text-[13px]">
               {year}
-            </option>
+            </SelectItem>
           ))}
-        </select>
-      </div>
+        </SelectContent>
+      </Select>
     </div>
   );
 }

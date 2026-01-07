@@ -18,31 +18,59 @@
 - **响应式**：768px断点，移动端汉堡菜单
 
 ## 技术栈
-- Next.js 14 (App Router)
+- Next.js 16 (App Router)
 - TypeScript
-- Tailwind CSS
+- Tailwind CSS v4
+- shadcn/ui（组件库）
 - next-intl（国际化）
 
 ## 项目结构
 ```
 /app/[locale]/          # 国际化路由
-  layout.tsx            # 根布局（含Sidebar）
+  layout.tsx            # 根布局（SidebarProvider）
   page.tsx              # 首页
   works/page.tsx        # 作品页
   about/page.tsx        # 关于页
 /components/
-  Sidebar.tsx           # 左侧导航栏
+  Sidebar.tsx           # 左侧导航栏（使用 shadcn/ui Sidebar）
   ArtworkGrid.tsx       # 作品网格
-  ArtworkCard.tsx       # 作品卡片
-  FilterBar.tsx         # 筛选栏
-  LightBox.tsx          # 大图查看
+  ArtworkCard.tsx       # 作品卡片（使用 shadcn/ui Card）
+  FilterBar.tsx         # 筛选栏（使用 ToggleGroup + Select）
+  LightBox.tsx          # 大图查看（使用 Dialog + Carousel）
+  /ui/                  # shadcn/ui 组件
+    button.tsx
+    card.tsx
+    carousel.tsx
+    dialog.tsx
+    select.tsx
+    sidebar.tsx
+    toggle-group.tsx
+    ...
+/lib/
+  types.ts              # 类型定义
+  utils.ts              # 工具函数（cn）
 /data/
   artworks.json         # 作品数据
   artist.ts             # 艺术家信息
 /messages/
   zh.json               # 中文翻译
   en.json               # 英文翻译
+/hooks/
+  use-mobile.ts         # 移动端检测 hook
+components.json         # shadcn/ui 配置
 ```
+
+## shadcn/ui 组件映射
+
+| 功能 | 使用的组件 |
+|-----|-----------|
+| 侧边栏 | Sidebar, SidebarProvider, SidebarInset |
+| 筛选类别 | ToggleGroup, ToggleGroupItem |
+| 年份下拉 | Select, SelectTrigger, SelectContent, SelectItem |
+| 大图查看 | Dialog, DialogContent |
+| 图片轮播 | Carousel, CarouselContent, CarouselItem |
+| 作品卡片 | Card, CardContent |
+| 按钮 | Button |
 
 ## 数据结构
 
@@ -63,6 +91,11 @@
 - `npm run build` - 构建生产版本
 - `npm run lint` - 代码检查
 
+## 添加 shadcn/ui 组件
+```bash
+npx shadcn@latest add [component-name]
+```
+
 ## 图片说明
 当前使用 picsum.photos 占位图，用户后续将提供真实作品图片替换。
 替换方式：更新 /data/artworks.json 中的 imageUrl 字段。
@@ -74,13 +107,13 @@
 
 ## 设计规范速查
 
-### 颜色
-| 用途 | 色值 |
-|-----|------|
-| 背景 | #FFFFFF |
-| 主文字 | #000000 |
-| 次要文字 | #999999 |
-| 边框 | #EEEEEE |
+### 颜色（CSS 变量）
+| 用途 | 变量 | 色值 |
+|-----|------|------|
+| 背景 | --background | #FFFFFF |
+| 主文字 | --foreground | #000000 |
+| 次要文字 | --muted-foreground | #999999 |
+| 边框 | --border | #EEEEEE |
 
 ### 字体
 | 元素 | 样式 |
@@ -88,16 +121,16 @@
 | Logo | 24px, bold, uppercase, letter-spacing: 2px |
 | 导航 | 15px, bold, uppercase |
 | 标题 | 15px, bold, uppercase |
-| 元信息 | 13px, #999 |
+| 元信息 | 13px, muted-foreground |
 | 正文 | 15px, line-height: 1.8 |
 
 ### 布局
-- 左侧导航：260px 固定宽度
-- 右侧内容：calc(100% - 266px)
-- 网格间距：40px
+- 左侧导航：260px 固定宽度（--sidebar-width）
+- 网格间距：40px（gap-10）
 - 内边距：40px（桌面）/ 20px（移动）
-- 响应式断点：768px
+- 响应式断点：768px（md）
+- 圆角：0rem（--radius: 0rem，保持极简风格）
 
 ### 交互
-- 过渡时间：0.3s ease
+- 过渡时间：0.3s ease（duration-300）
 - 悬停缩放：scale(1.02)

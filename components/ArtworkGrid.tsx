@@ -12,11 +12,17 @@ interface ArtworkGridProps {
 
 export default function ArtworkGrid({ artworks }: ArtworkGridProps) {
   const t = useTranslations('works');
-  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState<number>(0);
+  const [isLightBoxOpen, setIsLightBoxOpen] = useState(false);
+
+  const openLightBox = (index: number) => {
+    setSelectedIndex(index);
+    setIsLightBoxOpen(true);
+  };
 
   if (artworks.length === 0) {
     return (
-      <div className="text-center py-20 text-[#999]">
+      <div className="text-center py-20 text-muted-foreground">
         {t('noWorks')}
       </div>
     );
@@ -29,19 +35,18 @@ export default function ArtworkGrid({ artworks }: ArtworkGridProps) {
           <ArtworkCard
             key={artwork.id}
             artwork={artwork}
-            onClick={() => setSelectedIndex(index)}
+            onClick={() => openLightBox(index)}
           />
         ))}
       </div>
 
-      {selectedIndex !== null && (
-        <LightBox
-          artworks={artworks}
-          currentIndex={selectedIndex}
-          onClose={() => setSelectedIndex(null)}
-          onNavigate={setSelectedIndex}
-        />
-      )}
+      <LightBox
+        artworks={artworks}
+        currentIndex={selectedIndex}
+        open={isLightBoxOpen}
+        onOpenChange={setIsLightBoxOpen}
+        onNavigate={setSelectedIndex}
+      />
     </>
   );
 }
