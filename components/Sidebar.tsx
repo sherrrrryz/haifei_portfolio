@@ -27,17 +27,18 @@ function NavLinks() {
   ];
 
   return (
-    <SidebarMenu className="gap-4">
+    <SidebarMenu className="gap-0">
       {navLinks.map((link) => (
         <SidebarMenuItem key={link.href}>
           <SidebarMenuButton
             asChild
             isActive={pathname === link.href}
             className={cn(
-              'text-[15px] font-bold uppercase leading-[19px]',
-              'transition-colors duration-300 hover:text-muted-foreground',
-              'hover:bg-transparent active:bg-transparent',
-              'h-auto p-0 rounded-none'
+              'text-lg font-bold uppercase text-muted-foreground',
+              'transition-colors duration-300 hover:text-foreground',
+              'hover:bg-transparent active:bg-transparent data-[active=true]:bg-transparent',
+              'data-[active=true]:text-foreground data-[active=true]:font-bold',
+              'h-auto px-0 py-3 rounded-none'
             )}
             onClick={() => setOpenMobile(false)}
           >
@@ -55,7 +56,7 @@ function LanguageSwitch() {
   const { setOpenMobile } = useSidebar();
 
   return (
-    <div className="flex gap-2 text-[13px]">
+    <div className="flex gap-2 text-sm">
       <Link
         href={pathname}
         locale="zh"
@@ -87,26 +88,21 @@ export default function Sidebar() {
   const locale = useLocale();
 
   return (
-    <SidebarUI
-      side="left"
-      variant="sidebar"
-      collapsible="offcanvas"
-      className="border-none"
-    >
-      <SidebarHeader className="px-[30px] py-10 pb-0">
+    <SidebarUI className="border-none">
+      <SidebarHeader>
         <Link
           href="/"
-          className="text-2xl font-bold tracking-[2px] uppercase mb-[60px] block"
+          className="text-2xl font-bold tracking-[2px] uppercase block"
         >
           {locale === 'zh' ? '郗海飞' : 'XI HAIFEI'}
         </Link>
       </SidebarHeader>
 
-      <SidebarContent className="px-[30px]">
+      <SidebarContent>
         <NavLinks />
       </SidebarContent>
 
-      <SidebarFooter className="px-[30px] py-10 pt-0">
+      <SidebarFooter>
         <LanguageSwitch />
       </SidebarFooter>
     </SidebarUI>
