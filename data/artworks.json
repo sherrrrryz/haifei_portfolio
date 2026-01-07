@@ -1,0 +1,146 @@
+[
+  {
+    "id": "001",
+    "title": "威尼斯印象",
+    "titleEn": "Venice Impression",
+    "year": 2021,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "https://picsum.photos/seed/art001/800/600"
+  },
+  {
+    "id": "002",
+    "title": "江南水乡",
+    "titleEn": "Jiangnan Water Town",
+    "year": 2020,
+    "dimensions": "76x56cm",
+    "category": "watercolor",
+    "imageUrl": "https://picsum.photos/seed/art002/800/600"
+  },
+  {
+    "id": "003",
+    "title": "向日葵的风景",
+    "titleEn": "Landscape with Sunflowers",
+    "year": 2019,
+    "dimensions": "100x80cm",
+    "category": "oil",
+    "imageUrl": "https://picsum.photos/seed/art003/800/600"
+  },
+  {
+    "id": "004",
+    "title": "都市的诱惑",
+    "titleEn": "Urban Temptation",
+    "year": 2018,
+    "dimensions": "120x100cm",
+    "category": "oil",
+    "imageUrl": "https://picsum.photos/seed/art004/800/600"
+  },
+  {
+    "id": "005",
+    "title": "春潮涌动",
+    "titleEn": "Spring Tide Rising",
+    "year": 2014,
+    "dimensions": "200x150cm",
+    "category": "oil",
+    "imageUrl": "https://picsum.photos/seed/art005/800/600"
+  },
+  {
+    "id": "006",
+    "title": "青岛老街",
+    "titleEn": "Old Streets of Qingdao",
+    "year": 2017,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "https://picsum.photos/seed/art006/800/600"
+  },
+  {
+    "id": "007",
+    "title": "众神的黄昏",
+    "titleEn": "Twilight of the Gods",
+    "year": 1996,
+    "dimensions": "150x120cm",
+    "category": "oil",
+    "imageUrl": "https://picsum.photos/seed/art007/800/600"
+  },
+  {
+    "id": "008",
+    "title": "华丽家族",
+    "titleEn": "Magnificent Family",
+    "year": 2002,
+    "dimensions": "180x150cm",
+    "category": "oil",
+    "imageUrl": "https://picsum.photos/seed/art008/800/600"
+  },
+  {
+    "id": "009",
+    "title": "荷花",
+    "titleEn": "Lotus",
+    "year": 1991,
+    "dimensions": "68x45cm",
+    "category": "watercolor",
+    "imageUrl": "https://picsum.photos/seed/art009/800/600"
+  },
+  {
+    "id": "010",
+    "title": "青花",
+    "titleEn": "Blue and White Porcelain",
+    "year": 1991,
+    "dimensions": "68x45cm",
+    "category": "watercolor",
+    "imageUrl": "https://picsum.photos/seed/art010/800/600"
+  },
+  {
+    "id": "011",
+    "title": "白山黑水",
+    "titleEn": "White Mountains Black Waters",
+    "year": 2004,
+    "dimensions": "100x80cm",
+    "category": "oil",
+    "imageUrl": "https://picsum.photos/seed/art011/800/600"
+  },
+  {
+    "id": "012",
+    "title": "巴黎街景",
+    "titleEn": "Paris Street View",
+    "year": 1997,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "https://picsum.photos/seed/art012/800/600"
+  },
+  {
+    "id": "013",
+    "title": "古镇晨曦",
+    "titleEn": "Dawn at Ancient Town",
+    "year": 2015,
+    "dimensions": "76x56cm",
+    "category": "watercolor",
+    "imageUrl": "https://picsum.photos/seed/art013/800/600"
+  },
+  {
+    "id": "014",
+    "title": "夏夜",
+    "titleEn": "Summer Night",
+    "year": 1990,
+    "dimensions": "120x100cm",
+    "category": "oil",
+    "imageUrl": "https://picsum.photos/seed/art014/800/600"
+  },
+  {
+    "id": "015",
+    "title": "齐白石——自然",
+    "titleEn": "Qi Baishi - Nature",
+    "year": 2001,
+    "dimensions": "50x40cm",
+    "category": "watercolor",
+    "imageUrl": "https://picsum.photos/seed/art015/800/600"
+  },
+  {
+    "id": "016",
+    "title": "欧洲风情",
+    "titleEn": "European Charm",
+    "year": 2010,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "https://picsum.photos/seed/art016/800/600"
+  }
+]

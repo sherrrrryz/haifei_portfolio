@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "works": "Works",
+    "about": "About"
+  },
+  "home": {
+    "title": "Xi Haifei",
+    "subtitle": "Watercolor & Oil Painting",
+    "viewWorks": "View Works",
+    "featuredWorks": "Featured Works"
+  },
+  "works": {
+    "title": "Works",
+    "all": "All",
+    "watercolor": "Watercolor",
+    "oil": "Oil",
+    "year": "Year",
+    "allYears": "All Years",
+    "category": "Category",
+    "noWorks": "No works found"
+  },
+  "about": {
+    "title": "About",
+    "biography": "Biography",
+    "awards": "Awards & Exhibitions",
+    "timeline": "Timeline"
+  },
+  "artwork": {
+    "dimensions": "Dimensions",
+    "year": "Year",
+    "close": "Close",
+    "prev": "Previous",
+    "next": "Next"
+  },
+  "footer": {
+    "copyright": "© 2024 Xi Haifei. All rights reserved."
+  }
+}
