@@ -40,7 +40,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <Sidebar />
             <SidebarInset className="min-h-screen">
               {/* Mobile Header */}
-              <header className="md:hidden sticky top-0 z-40 flex h-[60px] items-center justify-between border-b border-border bg-background px-5">
+              <header className="md:hidden fixed top-0 left-0 right-0 z-40 flex h-[60px] items-center justify-between border-b border-border bg-background px-5">
                 <span className="text-xl font-bold tracking-[2px] uppercase">
                   {locale === 'zh' ? '郗海飞' : 'XI HAIFEI'}
                 </span>
@@ -48,7 +48,7 @@ export default async function LocaleLayout({ children, params }: Props) {
                   <Menu className="h-6 w-6" />
                 </SidebarTrigger>
               </header>
-              <main className="p-6">
+              <main className="p-6 pt-[84px] md:pt-6">
                 <PageTransition>
                   {children}
                 </PageTransition>
