@@ -4,8 +4,8 @@ export interface Artwork {
   titleEn?: string;
   year: number;
   dimensions: string;
-  category: 'watercolor' | 'oil';
+  category: 'watercolor' | 'oil' | 'mural';
   imageUrl: string;
 }
 
-export type ArtworkCategory = 'all' | 'watercolor' | 'oil';
+export type ArtworkCategory = 'all' | 'watercolor' | 'oil' | 'mural';

@@ -33,6 +33,7 @@ export default function FilterBar({
     { value: 'all', label: t('all') },
     { value: 'watercolor', label: t('watercolor') },
     { value: 'oil', label: t('oil') },
+    { value: 'mural', label: t('mural') },
   ];
 
   return (

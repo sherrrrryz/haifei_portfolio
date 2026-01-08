@@ -1,22 +1,13 @@
-import { useTranslations } from 'next-intl';
-import { setRequestLocale } from 'next-intl/server';
-import { Link } from '@/i18n/navigation';
+'use client';
+
+import { useState } from 'react';
+import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 import artworksData from '@/data/artworks.json';
 import type { Artwork } from '@/lib/types';
 import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
-
-type Props = {
-  params: Promise<{ locale: string }>;
-};
-
-export default async function HomePage({ params }: Props) {
-  const { locale } = await params;
-  setRequestLocale(locale);
-
-  return <HomeContent locale={locale} />;
-}
+import LightBox from '@/components/LightBox';
 
 // Seeded random shuffle to ensure consistency between server/client
 function seededShuffle<T>(array: T[], seed: number): T[] {
@@ -35,15 +26,30 @@ function seededShuffle<T>(array: T[], seed: number): T[] {
   return shuffled;
 }
 
-function HomeContent({ locale }: { locale: string }) {
+// Get today's seed - this ensures consistency within a day
+function getTodaySeed(): number {
+  const today = new Date();
+  return today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+}
+
+export default function HomePage() {
   const t = useTranslations('home');
+  const locale = useLocale();
   const artworks = artworksData as Artwork[];
 
   // Use date as seed so featured works change daily
-  const today = new Date();
-  const seed = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+  const [seed] = useState(() => getTodaySeed());
   const shuffled = seededShuffle(artworks, seed);
   const featuredArtworks = shuffled.slice(0, 6);
+
+  // LightBox state
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleImageClick = (index: number) => {
+    setCurrentIndex(index);
+    setLightboxOpen(true);
+  };
 
   return (
     <div className="min-h-screen">
@@ -53,10 +59,14 @@ function HomeContent({ locale }: { locale: string }) {
           {t('featuredWorks')}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
-          {featuredArtworks.map((artwork) => {
+          {featuredArtworks.map((artwork, index) => {
             const title = locale === 'en' && artwork.titleEn ? artwork.titleEn : artwork.title;
             return (
-              <Link key={artwork.id} href="/works" className="group block">
+              <button
+                key={artwork.id}
+                onClick={() => handleImageClick(index)}
+                className="group block text-left cursor-pointer"
+              >
                 <Card className="border-none shadow-none rounded-none bg-transparent">
                   <CardContent className="p-0">
                     <div className="relative overflow-hidden">
@@ -82,11 +92,20 @@ function HomeContent({ locale }: { locale: string }) {
                     </div>
                   </CardContent>
                 </Card>
-              </Link>
+              </button>
             );
           })}
         </div>
       </section>
+
+      {/* LightBox for viewing images */}
+      <LightBox
+        artworks={featuredArtworks}
+        currentIndex={currentIndex}
+        open={lightboxOpen}
+        onOpenChange={setLightboxOpen}
+        onNavigate={setCurrentIndex}
+      />
     </div>
   );
 }

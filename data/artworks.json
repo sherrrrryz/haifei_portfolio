@@ -223,5 +223,50 @@
     "dimensions": "68x45cm",
     "category": "watercolor",
     "imageUrl": "https://picsum.photos/seed/art025/800/600"
+  },
+  {
+    "id": "026",
+    "title": "城市之光",
+    "titleEn": "City Lights",
+    "year": 2018,
+    "dimensions": "1200x400cm",
+    "category": "mural",
+    "imageUrl": "https://picsum.photos/seed/mural001/800/600"
+  },
+  {
+    "id": "027",
+    "title": "丝绸之路",
+    "titleEn": "Silk Road",
+    "year": 2015,
+    "dimensions": "2000x300cm",
+    "category": "mural",
+    "imageUrl": "https://picsum.photos/seed/mural002/800/600"
+  },
+  {
+    "id": "028",
+    "title": "海上明珠",
+    "titleEn": "Pearl of the Sea",
+    "year": 2012,
+    "dimensions": "800x500cm",
+    "category": "mural",
+    "imageUrl": "https://picsum.photos/seed/mural003/800/600"
+  },
+  {
+    "id": "029",
+    "title": "和谐家园",
+    "titleEn": "Harmonious Home",
+    "year": 2010,
+    "dimensions": "1500x350cm",
+    "category": "mural",
+    "imageUrl": "https://picsum.photos/seed/mural004/800/600"
+  },
+  {
+    "id": "030",
+    "title": "时代印记",
+    "titleEn": "Mark of the Era",
+    "year": 2008,
+    "dimensions": "1000x600cm",
+    "category": "mural",
+    "imageUrl": "https://picsum.photos/seed/mural005/800/600"
   }
 ]

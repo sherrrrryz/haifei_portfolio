@@ -25,11 +25,13 @@ export default function WorksPage() {
   }, [artworks]);
 
   const filteredArtworks = useMemo(() => {
-    return artworks.filter((artwork) => {
-      const matchesYear = selectedYear === null || artwork.year === selectedYear;
-      const matchesCategory = selectedCategory === 'all' || artwork.category === selectedCategory;
-      return matchesYear && matchesCategory;
-    });
+    return artworks
+      .filter((artwork) => {
+        const matchesYear = selectedYear === null || artwork.year === selectedYear;
+        const matchesCategory = selectedCategory === 'all' || artwork.category === selectedCategory;
+        return matchesYear && matchesCategory;
+      })
+      .sort((a, b) => b.year - a.year);
   }, [artworks, selectedYear, selectedCategory]);
 
   // Reset to page 1 when filters change
