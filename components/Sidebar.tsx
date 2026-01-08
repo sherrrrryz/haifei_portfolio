@@ -22,7 +22,9 @@ function NavLinks() {
   const { setOpenMobile } = useSidebar();
 
   const navLinks = [
-    { href: '/works', label: t('works') },
+    { href: '/works/watercolor', label: t('watercolor') },
+    { href: '/works/oil', label: t('oil') },
+    { href: '/works/mural', label: t('mural') },
     { href: '/publications', label: t('publications') },
     { href: '/news', label: t('news') },
     { href: '/about', label: t('about') },
@@ -40,7 +42,7 @@ function NavLinks() {
               'transition-colors duration-300 hover:text-foreground',
               'hover:bg-transparent active:bg-transparent data-[active=true]:bg-transparent',
               'data-[active=true]:text-foreground data-[active=true]:font-bold',
-              'h-auto px-0 py-3 rounded-none'
+              'h-auto px-0 py-2 rounded-none'
             )}
             onClick={() => setOpenMobile(false)}
           >

@@ -8,4 +8,4 @@ export interface Artwork {
   imageUrl: string;
 }
 
-export type ArtworkCategory = 'all' | 'watercolor' | 'oil' | 'mural';
+export type ArtworkCategory = 'watercolor' | 'oil' | 'mural';
