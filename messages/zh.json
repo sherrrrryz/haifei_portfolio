@@ -2,6 +2,7 @@
   "nav": {
     "works": "作品",
     "publications": "出版著作",
+    "news": "资讯",
     "about": "关于"
   },
   "home": {
@@ -46,5 +47,10 @@
     "category": "所属类别",
     "price": "定价",
     "summary": "内容提要"
+  },
+  "news": {
+    "artistNews": "艺术家资讯",
+    "collections": "机构收藏",
+    "collectedBy": "被"
   }
 }

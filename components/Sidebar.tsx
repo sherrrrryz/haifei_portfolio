@@ -24,6 +24,7 @@ function NavLinks() {
   const navLinks = [
     { href: '/works', label: t('works') },
     { href: '/publications', label: t('publications') },
+    { href: '/news', label: t('news') },
     { href: '/about', label: t('about') },
   ];
 
