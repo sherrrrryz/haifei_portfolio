@@ -19,14 +19,9 @@ function AboutContent({ locale }: { locale: string }) {
 
   return (
     <div className="min-h-screen max-w-[800px]">
-      {/* Title */}
-      <h1 className="text-[15px] font-bold uppercase tracking-[1px] mb-10">
-        {t('title')}
-      </h1>
-
       {/* Biography */}
       <section className="mb-12">
-        <h2 className="text-[15px] font-bold uppercase tracking-[1px] mb-5">
+        <h2 className="text-2xl font-bold uppercase tracking-[2px] mb-5">
           {t('biography')}
         </h2>
         <div className="text-[15px] leading-[1.8] text-[#333] whitespace-pre-line">
@@ -36,7 +31,7 @@ function AboutContent({ locale }: { locale: string }) {
 
       {/* Awards */}
       <section className="mb-12">
-        <h2 className="text-[15px] font-bold uppercase tracking-[1px] mb-5">
+        <h2 className="text-2xl font-bold uppercase tracking-[2px] mb-5">
           {t('awards')}
         </h2>
         <ul className="space-y-3">
@@ -50,7 +45,7 @@ function AboutContent({ locale }: { locale: string }) {
 
       {/* Timeline */}
       <section className="mb-12">
-        <h2 className="text-[15px] font-bold uppercase tracking-[1px] mb-5">
+        <h2 className="text-2xl font-bold uppercase tracking-[2px] mb-5">
           {t('timeline')}
         </h2>
         <ul className="space-y-4">

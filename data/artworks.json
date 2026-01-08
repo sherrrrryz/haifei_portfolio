@@ -6,7 +6,7 @@
     "year": 2021,
     "dimensions": "53x38cm",
     "category": "watercolor",
-    "imageUrl": "https://picsum.photos/seed/art001/800/600"
+    "imageUrl": "https://picsum.photos/seed/painting101/800/600"
   },
   {
     "id": "002",
@@ -15,7 +15,7 @@
     "year": 2020,
     "dimensions": "76x56cm",
     "category": "watercolor",
-    "imageUrl": "https://picsum.photos/seed/art002/800/600"
+    "imageUrl": "https://picsum.photos/seed/painting102/800/600"
   },
   {
     "id": "003",
@@ -24,7 +24,7 @@
     "year": 2019,
     "dimensions": "100x80cm",
     "category": "oil",
-    "imageUrl": "https://picsum.photos/seed/art003/800/600"
+    "imageUrl": "https://picsum.photos/seed/painting103/800/600"
   },
   {
     "id": "004",
@@ -33,7 +33,7 @@
     "year": 2018,
     "dimensions": "120x100cm",
     "category": "oil",
-    "imageUrl": "https://picsum.photos/seed/art004/800/600"
+    "imageUrl": "https://picsum.photos/seed/painting104/800/600"
   },
   {
     "id": "005",
@@ -42,7 +42,7 @@
     "year": 2014,
     "dimensions": "200x150cm",
     "category": "oil",
-    "imageUrl": "https://picsum.photos/seed/art005/800/600"
+    "imageUrl": "https://picsum.photos/seed/painting105/800/600"
   },
   {
     "id": "006",
@@ -51,7 +51,7 @@
     "year": 2017,
     "dimensions": "53x38cm",
     "category": "watercolor",
-    "imageUrl": "https://picsum.photos/seed/art006/800/600"
+    "imageUrl": "https://picsum.photos/seed/painting106/800/600"
   },
   {
     "id": "007",
@@ -142,5 +142,86 @@
     "dimensions": "53x38cm",
     "category": "watercolor",
     "imageUrl": "https://picsum.photos/seed/art016/800/600"
+  },
+  {
+    "id": "017",
+    "title": "秋日私语",
+    "titleEn": "Autumn Whispers",
+    "year": 2012,
+    "dimensions": "80x60cm",
+    "category": "oil",
+    "imageUrl": "https://picsum.photos/seed/art017/800/600"
+  },
+  {
+    "id": "018",
+    "title": "山间小路",
+    "titleEn": "Mountain Path",
+    "year": 2008,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "https://picsum.photos/seed/art018/800/600"
+  },
+  {
+    "id": "019",
+    "title": "雪中梅",
+    "titleEn": "Plum Blossoms in Snow",
+    "year": 2005,
+    "dimensions": "68x45cm",
+    "category": "watercolor",
+    "imageUrl": "https://picsum.photos/seed/art019/800/600"
+  },
+  {
+    "id": "020",
+    "title": "城市记忆",
+    "titleEn": "City Memories",
+    "year": 2016,
+    "dimensions": "100x80cm",
+    "category": "oil",
+    "imageUrl": "https://picsum.photos/seed/art020/800/600"
+  },
+  {
+    "id": "021",
+    "title": "渔港晚霞",
+    "titleEn": "Sunset at Fishing Port",
+    "year": 2013,
+    "dimensions": "76x56cm",
+    "category": "watercolor",
+    "imageUrl": "https://picsum.photos/seed/art021/800/600"
+  },
+  {
+    "id": "022",
+    "title": "花开富贵",
+    "titleEn": "Blooming Prosperity",
+    "year": 1995,
+    "dimensions": "120x100cm",
+    "category": "oil",
+    "imageUrl": "https://picsum.photos/seed/art022/800/600"
+  },
+  {
+    "id": "023",
+    "title": "西湖春色",
+    "titleEn": "Spring at West Lake",
+    "year": 2011,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "https://picsum.photos/seed/art023/800/600"
+  },
+  {
+    "id": "024",
+    "title": "北国风光",
+    "titleEn": "Northern Scenery",
+    "year": 2007,
+    "dimensions": "150x120cm",
+    "category": "oil",
+    "imageUrl": "https://picsum.photos/seed/art024/800/600"
+  },
+  {
+    "id": "025",
+    "title": "江畔夕阳",
+    "titleEn": "Sunset by the River",
+    "year": 2009,
+    "dimensions": "68x45cm",
+    "category": "watercolor",
+    "imageUrl": "https://picsum.photos/seed/art025/800/600"
   }
 ]

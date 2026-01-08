@@ -36,7 +36,7 @@ export default function FilterBar({
   ];
 
   return (
-    <div className="flex flex-wrap gap-6 md:gap-8 py-5 border-b border-border">
+    <div className="flex flex-wrap justify-between gap-2 pb-[18px]">
       {/* Category Filter - ToggleGroup */}
       <ToggleGroup
         type="single"
@@ -49,7 +49,7 @@ export default function FilterBar({
             key={cat.value}
             value={cat.value}
             className={cn(
-              'text-[13px] font-bold uppercase',
+              'text-base md:text-2xl font-bold uppercase',
               'transition-colors duration-300',
               'hover:bg-transparent hover:text-foreground',
               'data-[state=on]:bg-transparent data-[state=on]:text-foreground',
@@ -65,11 +65,11 @@ export default function FilterBar({
       {/* Year Filter - Select */}
       <Select
         value={selectedYear?.toString() ?? ''}
-        onValueChange={(value) => onYearChange(value ? Number(value) : null)}
+        onValueChange={(value) => onYearChange(value === 'all' ? null : Number(value))}
       >
         <SelectTrigger
           className={cn(
-            'w-[120px] text-[13px] font-bold uppercase',
+            'w-[140px] md:w-[160px] text-sm md:text-lg font-normal uppercase',
             'border-muted-foreground/30 rounded-none',
             'focus:ring-0 focus:ring-offset-0 focus:border-foreground',
             'transition-colors duration-300'
@@ -78,11 +78,11 @@ export default function FilterBar({
           <SelectValue placeholder={t('allYears')} />
         </SelectTrigger>
         <SelectContent className="rounded-none">
-          <SelectItem value="all" className="text-[13px] font-bold uppercase">
+          <SelectItem value="all" className="text-lg font-normal uppercase">
             {t('allYears')}
           </SelectItem>
           {years.map((year) => (
-            <SelectItem key={year} value={year.toString()} className="text-[13px]">
+            <SelectItem key={year} value={year.toString()} className="text-lg">
               {year}
             </SelectItem>
           ))}
