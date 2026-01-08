@@ -5,6 +5,7 @@ import { routing } from '@/i18n/routing';
 import Sidebar, { SidebarTrigger } from '@/components/Sidebar';
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import { Menu } from 'lucide-react';
+import PageTransition from '@/components/PageTransition';
 
 type Props = {
   children: React.ReactNode;
@@ -48,7 +49,9 @@ export default async function LocaleLayout({ children, params }: Props) {
                 </SidebarTrigger>
               </header>
               <main className="p-6">
-                {children}
+                <PageTransition>
+                  {children}
+                </PageTransition>
               </main>
             </SidebarInset>
           </SidebarProvider>

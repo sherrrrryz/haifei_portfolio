@@ -1,6 +1,7 @@
 {
   "nav": {
     "works": "Works",
+    "publications": "Publications",
     "about": "About"
   },
   "home": {
@@ -35,5 +36,15 @@
   },
   "footer": {
     "copyright": "© 2024 Xi Haifei. All rights reserved."
+  },
+  "publications": {
+    "publisher": "Publisher",
+    "author": "Author",
+    "publishDate": "Date",
+    "format": "Format",
+    "printRun": "Print",
+    "category": "Category",
+    "price": "Price",
+    "summary": "Summary"
   }
 }

@@ -50,10 +50,10 @@ export default function FilterBar({
             value={cat.value}
             className={cn(
               'text-base md:text-2xl font-bold uppercase',
+              'text-muted-foreground',
               'transition-colors duration-300',
               'hover:bg-transparent hover:text-foreground',
               'data-[state=on]:bg-transparent data-[state=on]:text-foreground',
-              'data-[state=off]:text-muted-foreground',
               'px-0 h-auto rounded-none border-none'
             )}
           >

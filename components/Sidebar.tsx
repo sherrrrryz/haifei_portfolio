@@ -23,6 +23,7 @@ function NavLinks() {
 
   const navLinks = [
     { href: '/works', label: t('works') },
+    { href: '/publications', label: t('publications') },
     { href: '/about', label: t('about') },
   ];
 
@@ -92,7 +93,7 @@ export default function Sidebar() {
       <SidebarHeader>
         <Link
           href="/"
-          className="text-2xl font-bold uppercase block"
+          className="text-2xl font-bold uppercase tracking-[2px] block"
         >
           {locale === 'zh' ? '郗海飞' : 'XI HAIFEI'}
         </Link>

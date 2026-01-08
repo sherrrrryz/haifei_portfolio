@@ -1,6 +1,7 @@
 {
   "nav": {
     "works": "作品",
+    "publications": "出版著作",
     "about": "关于"
   },
   "home": {
@@ -35,5 +36,15 @@
   },
   "footer": {
     "copyright": "© 2024 郗海飞 版权所有"
+  },
+  "publications": {
+    "publisher": "出版社",
+    "author": "编著",
+    "publishDate": "出版日期",
+    "format": "开本",
+    "printRun": "印次",
+    "category": "所属类别",
+    "price": "定价",
+    "summary": "内容提要"
   }
 }

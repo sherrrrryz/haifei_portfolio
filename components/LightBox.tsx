@@ -1,27 +1,12 @@
 'use client';
 
-import { useEffect, useCallback, useState } from 'react';
+import { useEffect, useCallback } from 'react';
 import Image from 'next/image';
-import { useTranslations, useLocale } from 'next-intl';
+import { useLocale } from 'next-intl';
 import type { Artwork } from '@/lib/types';
-import {
-  Dialog,
-  DialogContent,
-  DialogTitle,
-  DialogDescription,
-} from '@/components/ui/dialog';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
-  type CarouselApi,
-} from '@/components/ui/carousel';
-import { Button } from '@/components/ui/button';
-import { X } from 'lucide-react';
-import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { motion, AnimatePresence } from 'framer-motion';
 
 interface LightBoxProps {
   artworks: Artwork[];
@@ -38,152 +23,142 @@ export default function LightBox({
   onOpenChange,
   onNavigate,
 }: LightBoxProps) {
-  const t = useTranslations('artwork');
   const locale = useLocale();
-  const [api, setApi] = useState<CarouselApi>();
-  const [current, setCurrent] = useState(currentIndex);
-
-  const artwork = artworks[current];
+  const artwork = artworks[currentIndex];
   const title = artwork
     ? locale === 'en' && artwork.titleEn
       ? artwork.titleEn
       : artwork.title
     : '';
 
-  // Sync carousel with external currentIndex
-  useEffect(() => {
-    if (api && open) {
-      api.scrollTo(currentIndex, true);
-      setCurrent(currentIndex);
-    }
-  }, [api, currentIndex, open]);
+  const goToPrevious = useCallback(() => {
+    const newIndex = currentIndex === 0 ? artworks.length - 1 : currentIndex - 1;
+    onNavigate(newIndex);
+  }, [currentIndex, artworks.length, onNavigate]);
 
-  // Listen to carousel slide changes
-  useEffect(() => {
-    if (!api) return;
+  const goToNext = useCallback(() => {
+    const newIndex = currentIndex === artworks.length - 1 ? 0 : currentIndex + 1;
+    onNavigate(newIndex);
+  }, [currentIndex, artworks.length, onNavigate]);
 
-    const onSelect = () => {
-      const index = api.selectedScrollSnap();
-      setCurrent(index);
-      onNavigate(index);
-    };
-
-    api.on('select', onSelect);
-    return () => {
-      api.off('select', onSelect);
-    };
-  }, [api, onNavigate]);
-
-  // Handle keyboard navigation for Escape
+  // Handle keyboard navigation
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
         onOpenChange(false);
+      } else if (e.key === 'ArrowLeft') {
+        goToPrevious();
+      } else if (e.key === 'ArrowRight') {
+        goToNext();
       }
     },
-    [onOpenChange]
+    [onOpenChange, goToPrevious, goToNext]
   );
 
   useEffect(() => {
     if (open) {
+      document.body.style.overflow = 'hidden';
       document.addEventListener('keydown', handleKeyDown);
-      return () => document.removeEventListener('keydown', handleKeyDown);
+      return () => {
+        document.body.style.overflow = '';
+        document.removeEventListener('keydown', handleKeyDown);
+      };
     }
   }, [open, handleKeyDown]);
 
   if (!artwork) return null;
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent
-        className={cn(
-          'max-w-[95vw] max-h-[95vh] w-full h-full p-0',
-          'bg-white/98 border-none rounded-none',
-          'flex flex-col items-center justify-center',
-          '[&>button]:hidden' // Hide default close button
-        )}
-      >
-        <VisuallyHidden>
-          <DialogTitle>{title}</DialogTitle>
-          <DialogDescription>
-            {t('viewingArtwork')} {current + 1} / {artworks.length}
-          </DialogDescription>
-        </VisuallyHidden>
-
-        {/* Custom Close Button */}
-        <Button
-          variant="ghost"
-          size="icon"
-          onClick={() => onOpenChange(false)}
-          className="absolute top-8 right-8 z-10 hover:bg-transparent hover:text-muted-foreground"
+    <AnimatePresence>
+      {open && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.3 }}
+          className="fixed inset-0 z-50 bg-white"
         >
-          <X className="h-6 w-6" />
-          <span className="sr-only">{t('close')}</span>
-        </Button>
-
-        {/* Carousel */}
-        <Carousel
-          setApi={setApi}
-          opts={{
-            startIndex: currentIndex,
-            loop: true,
-          }}
-          className="w-full max-w-[90vw] mx-auto"
-        >
-          <CarouselContent className="-ml-0">
-            {artworks.map((item, index) => {
-              const itemTitle =
-                locale === 'en' && item.titleEn ? item.titleEn : item.title;
-              return (
-                <CarouselItem key={item.id} className="pl-0 flex flex-col items-center justify-center">
-                  <div className="relative w-full flex items-center justify-center">
-                    <Image
-                      src={item.imageUrl}
-                      alt={itemTitle}
-                      width={1200}
-                      height={900}
-                      className="max-w-full max-h-[70vh] object-contain"
-                      priority={index === current}
-                    />
-                  </div>
-                  {/* Info */}
-                  <div className="text-center mt-6">
-                    <h2 className="text-[15px] font-bold uppercase mb-2">{itemTitle}</h2>
-                    <p className="text-[13px] text-muted-foreground">
-                      {item.year} · {item.dimensions}
-                    </p>
-                  </div>
-                </CarouselItem>
-              );
-            })}
-          </CarouselContent>
-          <CarouselPrevious
+          {/* Close Button */}
+          <button
+            onClick={() => onOpenChange(false)}
             className={cn(
-              'left-5 md:left-8 -translate-y-1/2',
-              'h-12 w-12 rounded-none border-none',
-              'hover:bg-transparent hover:text-muted-foreground',
-              'disabled:opacity-30'
+              'absolute top-0 right-0 z-10',
+              'w-[65px] h-[65px] flex items-center justify-center',
+              'text-foreground/35 hover:text-foreground/70',
+              'transition-colors duration-300'
             )}
-            variant="ghost"
-          />
-          <CarouselNext
-            className={cn(
-              'right-5 md:right-8 -translate-y-1/2',
-              'h-12 w-12 rounded-none border-none',
-              'hover:bg-transparent hover:text-muted-foreground',
-              'disabled:opacity-30'
-            )}
-            variant="ghost"
-          />
-        </Carousel>
+            aria-label="Close"
+          >
+            <X className="w-6 h-6" />
+          </button>
 
-        {/* Counter */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
-          <p className="text-[12px] text-muted-foreground">
-            {current + 1} / {artworks.length}
-          </p>
-        </div>
-      </DialogContent>
-    </Dialog>
+          {/* Previous Button */}
+          <button
+            onClick={goToPrevious}
+            className={cn(
+              'absolute left-0 top-1/2 -translate-y-1/2 z-10',
+              'w-[50px] h-[100px] flex items-center justify-center',
+              'text-foreground/35 hover:text-foreground/70',
+              'transition-colors duration-300'
+            )}
+            aria-label="Previous"
+          >
+            <ChevronLeft className="w-8 h-8" />
+          </button>
+
+          {/* Next Button */}
+          <button
+            onClick={goToNext}
+            className={cn(
+              'absolute right-0 top-1/2 -translate-y-1/2 z-10',
+              'w-[50px] h-[100px] flex items-center justify-center',
+              'text-foreground/35 hover:text-foreground/70',
+              'transition-colors duration-300'
+            )}
+            aria-label="Next"
+          >
+            <ChevronRight className="w-8 h-8" />
+          </button>
+
+          {/* Content */}
+          <div className="h-full w-full flex flex-col md:flex-row items-center justify-center px-[50px] py-[65px] md:px-[5vw]">
+            {/* Image */}
+            <motion.div
+              key={currentIndex}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.3 }}
+              className="flex-1 h-full flex items-center justify-center"
+            >
+              <Image
+                src={artwork.imageUrl}
+                alt={title}
+                width={1200}
+                height={900}
+                className="max-w-full max-h-full object-contain"
+                priority
+              />
+            </motion.div>
+
+            {/* Info */}
+            <div className={cn(
+              'mt-6 md:mt-0 md:ml-10',
+              'md:w-[200px] md:flex-shrink-0',
+              'text-center md:text-left'
+            )}>
+              <h2 className="text-[15px] font-bold uppercase mb-2">{title}</h2>
+              <p className="text-[13px] text-muted-foreground leading-[1.6]">
+                {artwork.year}
+                <br />
+                {artwork.dimensions}
+              </p>
+              <p className="text-[12px] text-muted-foreground mt-4">
+                {currentIndex + 1} / {artworks.length}
+              </p>
+            </div>
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }
