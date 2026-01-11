@@ -27,8 +27,11 @@
   "about": {
     "title": "About",
     "biography": "Biography",
-    "awards": "Awards & Exhibitions",
-    "timeline": "Timeline"
+    "exhibitions": "Major Exhibitions",
+    "jury": "Jury Service",
+    "awards": "Major Awards",
+    "muralProjects": "Major Mural Projects",
+    "publicationsTitle": "Major Publications"
   },
   "artwork": {
     "dimensions": "Dimensions",
@@ -39,7 +42,7 @@
     "viewingArtwork": "Viewing artwork"
   },
   "footer": {
-    "copyright": "© 2024 Xi Haifei. All rights reserved."
+    "copyright": "© 2025 Xi Haifei. All rights reserved."
   },
   "publications": {
     "publisher": "Publisher",

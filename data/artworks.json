@@ -1,21 +1,2145 @@
 [
   {
-    "id": "001",
-    "title": "威尼斯印象",
-    "titleEn": "Venice Impression",
+    "id": "w031",
+    "title": "傍晚的街道",
+    "titleEn": "Evening Street",
     "year": 2021,
     "dimensions": "53x38cm",
     "category": "watercolor",
-    "imageUrl": "https://picsum.photos/seed/painting101/800/600"
+    "imageUrl": "/images/watercolor/watercolor-031.jpg"
   },
   {
-    "id": "002",
-    "title": "江南水乡",
-    "titleEn": "Jiangnan Water Town",
-    "year": 2020,
-    "dimensions": "76x56cm",
+    "id": "w039",
+    "title": "冬日的纽约",
+    "titleEn": "New York in Winter",
+    "year": 2021,
+    "dimensions": "53x38cm",
     "category": "watercolor",
-    "imageUrl": "https://picsum.photos/seed/painting102/800/600"
+    "imageUrl": "/images/watercolor/watercolor-039.jpg"
+  },
+  {
+    "id": "w041",
+    "title": "冰原的歌",
+    "titleEn": "Song of the Ice Field",
+    "year": 2021,
+    "dimensions": "51x36cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-041.jpg"
+  },
+  {
+    "id": "w043",
+    "title": "冰封的田野",
+    "titleEn": "Frozen Fields",
+    "year": 2021,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-043.jpg"
+  },
+  {
+    "id": "w044",
+    "title": "冰河",
+    "titleEn": "Frozen River",
+    "year": 2021,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-044.jpg"
+  },
+  {
+    "id": "w045",
+    "title": "初雪",
+    "titleEn": "First Snow",
+    "year": 2021,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-045.jpg"
+  },
+  {
+    "id": "w098",
+    "title": "早春的纽约",
+    "titleEn": "Early Spring in New York",
+    "year": 2021,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-098.jpg"
+  },
+  {
+    "id": "w126",
+    "title": "沼泽",
+    "titleEn": "The Marsh",
+    "year": 2021,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-126.jpg"
+  },
+  {
+    "id": "w128",
+    "title": "海滩假日",
+    "titleEn": "Beach Holiday",
+    "year": 2021,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-128.jpg"
+  },
+  {
+    "id": "w136",
+    "title": "渔人码头的傍晚",
+    "titleEn": "Evening at Fisherman's Wharf",
+    "year": 2021,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-136.jpeg"
+  },
+  {
+    "id": "w164",
+    "title": "红土地",
+    "titleEn": "Red Earth",
+    "year": 2021,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-164.jpg"
+  },
+  {
+    "id": "w170",
+    "title": "红灯",
+    "titleEn": "Red Light",
+    "year": 2021,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-170.jpg"
+  },
+  {
+    "id": "w206",
+    "title": "阳光下的街道",
+    "titleEn": "Sunlit Street",
+    "year": 2021,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-206.jpg"
+  },
+  {
+    "id": "w212",
+    "title": "雨过去了",
+    "titleEn": "After the Rain",
+    "year": 2021,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-212.jpg"
+  },
+  {
+    "id": "w219",
+    "title": "风平浪静",
+    "titleEn": "Calm Seas",
+    "year": 2021,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-219.jpg"
+  },
+  {
+    "id": "w006",
+    "title": "一棵大树一条路",
+    "titleEn": "A Big Tree, A Road",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-006.jpg"
+  },
+  {
+    "id": "w008",
+    "title": "乌云与静海",
+    "titleEn": "Dark Clouds and Calm Sea",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-008.jpeg"
+  },
+  {
+    "id": "w009",
+    "title": "乡村加油站",
+    "titleEn": "Rural Gas Station",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-009.jpeg"
+  },
+  {
+    "id": "w010",
+    "title": "乡间的日子",
+    "titleEn": "Country Days",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-010.jpeg"
+  },
+  {
+    "id": "w011",
+    "title": "云与海10",
+    "titleEn": "Clouds and Sea No.10",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-011.jpeg"
+  },
+  {
+    "id": "w012",
+    "title": "云与海11",
+    "titleEn": "Clouds and Sea No.11",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-012.jpeg"
+  },
+  {
+    "id": "w013",
+    "title": "云与海12",
+    "titleEn": "Clouds and Sea No.12",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-013.jpeg"
+  },
+  {
+    "id": "w014",
+    "title": "云与海13",
+    "titleEn": "Clouds and Sea No.13",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-014.jpeg"
+  },
+  {
+    "id": "w015",
+    "title": "云与海14",
+    "titleEn": "Clouds and Sea No.14",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-015.jpeg"
+  },
+  {
+    "id": "w016",
+    "title": "云与海15",
+    "titleEn": "Clouds and Sea No.15",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-016.jpeg"
+  },
+  {
+    "id": "w017",
+    "title": "云与海2",
+    "titleEn": "Clouds and Sea No.2",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-017.jpeg"
+  },
+  {
+    "id": "w018",
+    "title": "云与海3",
+    "titleEn": "Clouds and Sea No.3",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-018.jpeg"
+  },
+  {
+    "id": "w019",
+    "title": "云与海4",
+    "titleEn": "Clouds and Sea No.4",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-019.jpeg"
+  },
+  {
+    "id": "w020",
+    "title": "云与海5",
+    "titleEn": "Clouds and Sea No.5",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-020.jpeg"
+  },
+  {
+    "id": "w021",
+    "title": "云与海6",
+    "titleEn": "Clouds and Sea No.6",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-021.jpeg"
+  },
+  {
+    "id": "w022",
+    "title": "云与海7",
+    "titleEn": "Clouds and Sea No.7",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-022.jpeg"
+  },
+  {
+    "id": "w023",
+    "title": "云与海8",
+    "titleEn": "Clouds and Sea No.8",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-023.jpeg"
+  },
+  {
+    "id": "w024",
+    "title": "云与海9",
+    "titleEn": "Clouds and Sea No.9",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-024.jpeg"
+  },
+  {
+    "id": "w025",
+    "title": "云与海",
+    "titleEn": "Clouds and Sea",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-025.jpeg"
+  },
+  {
+    "id": "w026",
+    "title": "云海",
+    "titleEn": "Sea of Clouds",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-026.jpeg"
+  },
+  {
+    "id": "w027",
+    "title": "云生出山",
+    "titleEn": "Clouds Rising from the Mountain",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-027.jpeg"
+  },
+  {
+    "id": "w028",
+    "title": "云罩荒山",
+    "titleEn": "Clouds Over Barren Hills",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-028.jpeg"
+  },
+  {
+    "id": "w029",
+    "title": "休渔了",
+    "titleEn": "Fishing Season Ends",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-029.jpg"
+  },
+  {
+    "id": "w035",
+    "title": "农场的路",
+    "titleEn": "Farm Road",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-035.jpg"
+  },
+  {
+    "id": "w036",
+    "title": "冬日",
+    "titleEn": "Winter Day",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-036.jpeg"
+  },
+  {
+    "id": "w038",
+    "title": "冬日的池塘",
+    "titleEn": "Winter Pond",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-038.jpeg"
+  },
+  {
+    "id": "w040",
+    "title": "冬日的苇塘",
+    "titleEn": "Winter Reed Pond",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-040.jpeg"
+  },
+  {
+    "id": "w046",
+    "title": "前方右转",
+    "titleEn": "Turn Right Ahead",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-046.jpeg"
+  },
+  {
+    "id": "w047",
+    "title": "北方的田野",
+    "titleEn": "Northern Fields",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-047.jpg"
+  },
+  {
+    "id": "w048",
+    "title": "友人山居",
+    "titleEn": "Friend's Mountain Retreat",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-048.jpg"
+  },
+  {
+    "id": "w049",
+    "title": "古城与海",
+    "titleEn": "Ancient City and Sea",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-049.jpeg"
+  },
+  {
+    "id": "w051",
+    "title": "向远方",
+    "titleEn": "Towards the Distance",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-051.jpeg"
+  },
+  {
+    "id": "w052",
+    "title": "回忆龟兹",
+    "titleEn": "Memories of Kucha",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-052.jpg"
+  },
+  {
+    "id": "w054",
+    "title": "塞北的云",
+    "titleEn": "Clouds of the Northern Frontier",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-054.jpg"
+  },
+  {
+    "id": "w055",
+    "title": "塞纳河边",
+    "titleEn": "By the Seine",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-055.jpeg"
+  },
+  {
+    "id": "w056",
+    "title": "夏日海滩",
+    "titleEn": "Summer Beach",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-056.jpeg"
+  },
+  {
+    "id": "w057",
+    "title": "夏日海边",
+    "titleEn": "Summer Seaside",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-057.jpeg"
+  },
+  {
+    "id": "w058",
+    "title": "夏日的池塘",
+    "titleEn": "Summer Pond",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-058.jpeg"
+  },
+  {
+    "id": "w060",
+    "title": "大西洋1",
+    "titleEn": "Atlantic Ocean No.1",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-060.jpeg"
+  },
+  {
+    "id": "w061",
+    "title": "大西洋2",
+    "titleEn": "Atlantic Ocean No.2",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-061.jpeg"
+  },
+  {
+    "id": "w062",
+    "title": "大西洋3",
+    "titleEn": "Atlantic Ocean No.3",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-062.jpeg"
+  },
+  {
+    "id": "w063",
+    "title": "大西洋4",
+    "titleEn": "Atlantic Ocean No.4",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-063.jpeg"
+  },
+  {
+    "id": "w064",
+    "title": "大西洋5",
+    "titleEn": "Atlantic Ocean No.5",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-064.jpeg"
+  },
+  {
+    "id": "w065",
+    "title": "大雪封山的日子2",
+    "titleEn": "Days of Heavy Snow No.2",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-065.jpeg"
+  },
+  {
+    "id": "w066",
+    "title": "大雪封山的日子",
+    "titleEn": "Days of Heavy Snow",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-066.jpeg"
+  },
+  {
+    "id": "w067",
+    "title": "天眼",
+    "titleEn": "Eye of Heaven",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-067.jpeg"
+  },
+  {
+    "id": "w069",
+    "title": "威尼斯的夜晚",
+    "titleEn": "Venice Night",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-069.jpeg"
+  },
+  {
+    "id": "w070",
+    "title": "孤独的钓鱼人",
+    "titleEn": "The Lonely Fisherman",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-070.jpeg"
+  },
+  {
+    "id": "w071",
+    "title": "家乡的云天",
+    "titleEn": "Hometown Skies",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-071.jpeg"
+  },
+  {
+    "id": "w072",
+    "title": "家乡的云天",
+    "titleEn": "Hometown Skies",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-072.jpeg"
+  },
+  {
+    "id": "w073",
+    "title": "家乡的山路",
+    "titleEn": "Mountain Road of Hometown",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-073.jpg"
+  },
+  {
+    "id": "w074",
+    "title": "山-云",
+    "titleEn": "Mountain and Cloud",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-074.jpeg"
+  },
+  {
+    "id": "w076",
+    "title": "山前落雨了",
+    "titleEn": "Rain Before the Mountain",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-076.jpg"
+  },
+  {
+    "id": "w080",
+    "title": "山路",
+    "titleEn": "Mountain Path",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-080.jpeg"
+  },
+  {
+    "id": "w084",
+    "title": "开春季节",
+    "titleEn": "Early Spring Season",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-084.jpeg"
+  },
+  {
+    "id": "w085",
+    "title": "张北夏日",
+    "titleEn": "Summer in Zhangbei",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-085.jpeg"
+  },
+  {
+    "id": "w086",
+    "title": "张北麦收季节",
+    "titleEn": "Harvest Season in Zhangbei",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-086.jpeg"
+  },
+  {
+    "id": "w087",
+    "title": "弯道",
+    "titleEn": "The Curve",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-087.jpg"
+  },
+  {
+    "id": "w088",
+    "title": "怀来坊口村",
+    "titleEn": "Fangkou Village in Huailai",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-088.jpeg"
+  },
+  {
+    "id": "w090",
+    "title": "慕尼黑的午后",
+    "titleEn": "Munich Afternoon",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-090.jpeg"
+  },
+  {
+    "id": "w096",
+    "title": "无尽的路",
+    "titleEn": "Endless Road",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-096.jpeg"
+  },
+  {
+    "id": "w099",
+    "title": "旷野",
+    "titleEn": "Wilderness",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-099.jpeg"
+  },
+  {
+    "id": "w101",
+    "title": "晋南风景",
+    "titleEn": "Southern Shanxi Landscape",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-101.jpeg"
+  },
+  {
+    "id": "w102",
+    "title": "晋南风景",
+    "titleEn": "Southern Shanxi Landscape",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-102.jpg"
+  },
+  {
+    "id": "w108",
+    "title": "望云天",
+    "titleEn": "Gazing at the Cloudy Sky",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-108.jpeg"
+  },
+  {
+    "id": "w109",
+    "title": "望云天",
+    "titleEn": "Gazing at the Cloudy Sky",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-109.jpeg"
+  },
+  {
+    "id": "w110",
+    "title": "村口有条小路",
+    "titleEn": "A Path at the Village Entrance",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-110.jpeg"
+  },
+  {
+    "id": "w111",
+    "title": "村口有棵大树",
+    "titleEn": "A Big Tree at the Village Entrance",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-111.jpeg"
+  },
+  {
+    "id": "w112",
+    "title": "村口的乱石滩",
+    "titleEn": "Rocky Beach at the Village Entrance",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-112.jpeg"
+  },
+  {
+    "id": "w113",
+    "title": "村边的小路",
+    "titleEn": "Path by the Village",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-113.jpeg"
+  },
+  {
+    "id": "w114",
+    "title": "村边的池塘",
+    "titleEn": "Pond by the Village",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-114.jpeg"
+  },
+  {
+    "id": "w115",
+    "title": "枯山",
+    "titleEn": "Barren Mountain",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-115.jpeg"
+  },
+  {
+    "id": "w117",
+    "title": "枯山水",
+    "titleEn": "Dry Landscape",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-117.jpeg"
+  },
+  {
+    "id": "w121",
+    "title": "残冬的黄昏",
+    "titleEn": "Late Winter Dusk",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-121.jpeg"
+  },
+  {
+    "id": "w123",
+    "title": "河上一片云",
+    "titleEn": "A Cloud Over the River",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-123.jpeg"
+  },
+  {
+    "id": "w125",
+    "title": "沼泽",
+    "titleEn": "Swamp",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-125.jpeg"
+  },
+  {
+    "id": "w129",
+    "title": "海边",
+    "titleEn": "By the Sea",
+    "year": 2020,
+    "dimensions": "25x19cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-129.jpeg"
+  },
+  {
+    "id": "w130",
+    "title": "海边假日",
+    "titleEn": "Seaside Holiday",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-130.jpeg"
+  },
+  {
+    "id": "w131",
+    "title": "海边的木屋",
+    "titleEn": "Cabin by the Sea",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-131.jpeg"
+  },
+  {
+    "id": "w135",
+    "title": "消融的冰川",
+    "titleEn": "Melting Glacier",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-135.jpeg"
+  },
+  {
+    "id": "w138",
+    "title": "湖边",
+    "titleEn": "By the Lake",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-138.jpeg"
+  },
+  {
+    "id": "w140",
+    "title": "炎热的午后",
+    "titleEn": "Hot Afternoon",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-140.jpg"
+  },
+  {
+    "id": "w141",
+    "title": "燥热的正午",
+    "titleEn": "Scorching Noon",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-141.jpeg"
+  },
+  {
+    "id": "w142",
+    "title": "特来多的午后",
+    "titleEn": "Toledo Afternoon",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-142.jpeg"
+  },
+  {
+    "id": "w145",
+    "title": "特来多的阳光",
+    "titleEn": "Sunlight in Toledo",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-145.jpeg"
+  },
+  {
+    "id": "w146",
+    "title": "犹他--克莱斯峡谷2",
+    "titleEn": "Utah - Bryce Canyon No.2",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-146.jpeg"
+  },
+  {
+    "id": "w147",
+    "title": "犹他--克莱斯峡谷3",
+    "titleEn": "Utah - Bryce Canyon No.3",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-147.jpeg"
+  },
+  {
+    "id": "w148",
+    "title": "犹他--克莱斯峡谷4",
+    "titleEn": "Utah - Bryce Canyon No.4",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-148.jpeg"
+  },
+  {
+    "id": "w149",
+    "title": "犹他--克莱斯峡谷5",
+    "titleEn": "Utah - Bryce Canyon No.5",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-149.jpeg"
+  },
+  {
+    "id": "w150",
+    "title": "犹他--克莱斯峡谷",
+    "titleEn": "Utah - Bryce Canyon",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-150.jpeg"
+  },
+  {
+    "id": "w151",
+    "title": "犹他山谷的正午",
+    "titleEn": "Noon in Utah Valley",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-151.jpeg"
+  },
+  {
+    "id": "w152",
+    "title": "犹他峡谷",
+    "titleEn": "Utah Canyon",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-152.jpeg"
+  },
+  {
+    "id": "w153",
+    "title": "犹他峡谷",
+    "titleEn": "Utah Canyon",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-153.jpeg"
+  },
+  {
+    "id": "w154",
+    "title": "犹他峡谷",
+    "titleEn": "Utah Canyon",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-154.jpeg"
+  },
+  {
+    "id": "w155",
+    "title": "犹他的回忆",
+    "titleEn": "Memories of Utah",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-155.jpg"
+  },
+  {
+    "id": "w156",
+    "title": "犹他的路",
+    "titleEn": "Utah Road",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-156.jpeg"
+  },
+  {
+    "id": "w157",
+    "title": "田园",
+    "titleEn": "Pastoral",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-157.jpeg"
+  },
+  {
+    "id": "w158",
+    "title": "看山",
+    "titleEn": "Viewing the Mountain",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-158.jpeg"
+  },
+  {
+    "id": "w163",
+    "title": "窗外的雨",
+    "titleEn": "Rain Outside the Window",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-163.jpeg"
+  },
+  {
+    "id": "w165",
+    "title": "红土绿地",
+    "titleEn": "Red Soil and Green Land",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-165.jpeg"
+  },
+  {
+    "id": "w168",
+    "title": "红柳",
+    "titleEn": "Red Willow",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-168.jpg"
+  },
+  {
+    "id": "w169",
+    "title": "红柳家乡",
+    "titleEn": "Red Willow Homeland",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-169.jpg"
+  },
+  {
+    "id": "w172",
+    "title": "绿色的海",
+    "titleEn": "Green Sea",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-172.jpeg"
+  },
+  {
+    "id": "w173",
+    "title": "缅因初春",
+    "titleEn": "Early Spring in Maine",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-173.jpeg"
+  },
+  {
+    "id": "w174",
+    "title": "缅因海边的教堂",
+    "titleEn": "Church by the Maine Coast",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-174.jpeg"
+  },
+  {
+    "id": "w175",
+    "title": "缅因海边的木屋",
+    "titleEn": "Cabin by the Maine Coast",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-175.jpeg"
+  },
+  {
+    "id": "w176",
+    "title": "缅因渔港",
+    "titleEn": "Maine Fishing Harbor",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-176.jpeg"
+  },
+  {
+    "id": "w177",
+    "title": "缅因渔港",
+    "titleEn": "Maine Fishing Harbor",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-177.jpeg"
+  },
+  {
+    "id": "w178",
+    "title": "缅因的海边",
+    "titleEn": "Maine Seaside",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-178.jpeg"
+  },
+  {
+    "id": "w180",
+    "title": "罗马",
+    "titleEn": "Rome",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-180.jpeg"
+  },
+  {
+    "id": "w185",
+    "title": "草原的雨云",
+    "titleEn": "Rain Clouds Over the Grassland",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-185.jpg"
+  },
+  {
+    "id": "w186",
+    "title": "荒野上空的薄云",
+    "titleEn": "Thin Clouds Over the Wilderness",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-186.jpeg"
+  },
+  {
+    "id": "w188",
+    "title": "荒野云天",
+    "titleEn": "Cloudy Sky Over the Wilderness",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-188.jpg"
+  },
+  {
+    "id": "w189",
+    "title": "融雪的季节",
+    "titleEn": "Melting Snow Season",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-189.jpeg"
+  },
+  {
+    "id": "w191",
+    "title": "街角的斜阳",
+    "titleEn": "Slanting Sun at the Street Corner",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-191.jpeg"
+  },
+  {
+    "id": "w193",
+    "title": "西部乡村的黄昏",
+    "titleEn": "Dusk in Western Countryside",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-193.jpeg"
+  },
+  {
+    "id": "w194",
+    "title": "西部的路",
+    "titleEn": "Western Road",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-194.jpeg"
+  },
+  {
+    "id": "w197",
+    "title": "该出海了",
+    "titleEn": "Time to Set Sail",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-197.jpeg"
+  },
+  {
+    "id": "w198",
+    "title": "路边一棵大树",
+    "titleEn": "A Big Tree by the Road",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-198.jpeg"
+  },
+  {
+    "id": "w200",
+    "title": "车窗外的雨",
+    "titleEn": "Rain Outside the Car Window",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-200.jpeg"
+  },
+  {
+    "id": "w202",
+    "title": "远方有雨",
+    "titleEn": "Rain in the Distance",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-202.jpeg"
+  },
+  {
+    "id": "w204",
+    "title": "长天云海",
+    "titleEn": "Vast Sky and Sea of Clouds",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-204.jpeg"
+  },
+  {
+    "id": "w205",
+    "title": "阳光300",
+    "titleEn": "Sunlight 300",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-205.jpeg"
+  },
+  {
+    "id": "w207",
+    "title": "阵风吹过山野",
+    "titleEn": "Gusts Blowing Across the Hills",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-207.jpeg"
+  },
+  {
+    "id": "w208",
+    "title": "阿尔汗布拉宫的傍晚",
+    "titleEn": "Evening at the Alhambra",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-208.jpeg"
+  },
+  {
+    "id": "w209",
+    "title": "雨中的街道",
+    "titleEn": "Street in the Rain",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-209.jpeg"
+  },
+  {
+    "id": "w211",
+    "title": "雨后的街道",
+    "titleEn": "Street After Rain",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-211.jpeg"
+  },
+  {
+    "id": "w213",
+    "title": "雪中的村庄",
+    "titleEn": "Village in the Snow",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-213.jpeg"
+  },
+  {
+    "id": "w214",
+    "title": "雪后",
+    "titleEn": "After the Snow",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-214.jpeg"
+  },
+  {
+    "id": "w215",
+    "title": "雪山脚下的湖",
+    "titleEn": "Lake at the Foot of Snow Mountain",
+    "year": 2020,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-215.jpeg"
+  },
+  {
+    "id": "w216",
+    "title": "雾锁金门",
+    "titleEn": "Fog Over Golden Gate",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-216.jpeg"
+  },
+  {
+    "id": "w220",
+    "title": "马德里",
+    "titleEn": "Madrid",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-220.jpeg"
+  },
+  {
+    "id": "w221",
+    "title": "马德里的黄昏",
+    "titleEn": "Dusk in Madrid",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-221.jpeg"
+  },
+  {
+    "id": "w222",
+    "title": "马拉加的风景",
+    "titleEn": "Malaga Landscape",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-222.jpg"
+  },
+  {
+    "id": "w223",
+    "title": "马拉加老宅",
+    "titleEn": "Old House in Malaga",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-223.jpeg"
+  },
+  {
+    "id": "w225",
+    "title": "黄昏古道",
+    "titleEn": "Ancient Path at Dusk",
+    "year": 2020,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-225.jpeg"
+  },
+  {
+    "id": "w227",
+    "title": "黄昏的港口",
+    "titleEn": "Harbor at Dusk",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-227.jpg"
+  },
+  {
+    "id": "w229",
+    "title": "黄石湖",
+    "titleEn": "Yellowstone Lake",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-229.jpeg"
+  },
+  {
+    "id": "w230",
+    "title": "黄石湖的松树",
+    "titleEn": "Pine Trees at Yellowstone Lake",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-230.jpeg"
+  },
+  {
+    "id": "w232",
+    "title": "黑土地",
+    "titleEn": "Black Earth",
+    "year": 2020,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-232.jpg"
+  },
+  {
+    "id": "w234",
+    "title": "龟兹古道",
+    "titleEn": "Ancient Kucha Road",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-234.jpeg"
+  },
+  {
+    "id": "w236",
+    "title": "龟兹的记忆",
+    "titleEn": "Memories of Kucha",
+    "year": 2020,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-236.jpeg"
+  },
+  {
+    "id": "w007",
+    "title": "上山的云",
+    "titleEn": "Clouds Ascending the Mountain",
+    "year": 2019,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-007.jpg"
+  },
+  {
+    "id": "w037",
+    "title": "冬日的乌镇",
+    "titleEn": "Wuzhen in Winter",
+    "year": 2019,
+    "dimensions": "50x40cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-037.jpeg"
+  },
+  {
+    "id": "w053",
+    "title": "圣山之秋",
+    "titleEn": "Autumn of the Sacred Mountain",
+    "year": 2019,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-053.jpg"
+  },
+  {
+    "id": "w068",
+    "title": "头顶一片云",
+    "titleEn": "A Cloud Overhead",
+    "year": 2019,
+    "dimensions": "51x41cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-068.jpeg"
+  },
+  {
+    "id": "w075",
+    "title": "山中清雨",
+    "titleEn": "Light Rain in the Mountains",
+    "year": 2019,
+    "dimensions": "51x41cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-075.jpeg"
+  },
+  {
+    "id": "w077",
+    "title": "山坡和古堡",
+    "titleEn": "Hillside and Castle",
+    "year": 2019,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-077.jpeg"
+  },
+  {
+    "id": "w079",
+    "title": "山脚的路",
+    "titleEn": "Road at the Foot of the Mountain",
+    "year": 2019,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-079.jpeg"
+  },
+  {
+    "id": "w082",
+    "title": "巴黎的斜阳",
+    "titleEn": "Slanting Sun in Paris",
+    "year": 2019,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-082.jpg"
+  },
+  {
+    "id": "w091",
+    "title": "故乡的海港",
+    "titleEn": "Harbor of Hometown",
+    "year": 2019,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-091.jpg"
+  },
+  {
+    "id": "w116",
+    "title": "枯山",
+    "titleEn": "Barren Mountain",
+    "year": 2019,
+    "dimensions": "50x40cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-116.jpeg"
+  },
+  {
+    "id": "w122",
+    "title": "江边的云",
+    "titleEn": "Clouds by the River",
+    "year": 2019,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-122.jpg"
+  },
+  {
+    "id": "w139",
+    "title": "灿烂的阳光",
+    "titleEn": "Brilliant Sunshine",
+    "year": 2019,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-139.jpeg"
+  },
+  {
+    "id": "w143",
+    "title": "特来多的正午",
+    "titleEn": "Noon in Toledo",
+    "year": 2019,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-143.jpeg"
+  },
+  {
+    "id": "w144",
+    "title": "特来多的街道",
+    "titleEn": "Streets of Toledo",
+    "year": 2019,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-144.jpeg"
+  },
+  {
+    "id": "w167",
+    "title": "红山",
+    "titleEn": "Red Mountain",
+    "year": 2019,
+    "dimensions": "31x41cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-167.jpeg"
+  },
+  {
+    "id": "w182",
+    "title": "罗马黄昏",
+    "titleEn": "Rome at Dusk",
+    "year": 2019,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-182.jpeg"
+  },
+  {
+    "id": "w183",
+    "title": "苏格兰郊外的教堂",
+    "titleEn": "Church in Scottish Countryside",
+    "year": 2019,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-183.jpg"
+  },
+  {
+    "id": "w184",
+    "title": "草原暮色",
+    "titleEn": "Twilight on the Grassland",
+    "year": 2019,
+    "dimensions": "50x40cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-184.jpeg"
+  },
+  {
+    "id": "w187",
+    "title": "荒野中的古堡",
+    "titleEn": "Castle in the Wilderness",
+    "year": 2019,
+    "dimensions": "46x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-187.jpg"
+  },
+  {
+    "id": "w192",
+    "title": "街角的阳光",
+    "titleEn": "Sunlight at the Street Corner",
+    "year": 2019,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-192.jpeg"
+  },
+  {
+    "id": "w199",
+    "title": "路边的风景",
+    "titleEn": "Roadside Scenery",
+    "year": 2019,
+    "dimensions": "31x41cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-199.jpeg"
+  },
+  {
+    "id": "w203",
+    "title": "郊外的树林",
+    "titleEn": "Woods in the Suburbs",
+    "year": 2019,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-203.jpeg"
+  },
+  {
+    "id": "w217",
+    "title": "静静的水塘",
+    "titleEn": "Quiet Pond",
+    "year": 2019,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-217.jpeg"
+  },
+  {
+    "id": "w218",
+    "title": "风中的桦树林",
+    "titleEn": "Birch Forest in the Wind",
+    "year": 2019,
+    "dimensions": "53x38cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-218.jpg"
+  },
+  {
+    "id": "w226",
+    "title": "黄昏的森林",
+    "titleEn": "Forest at Dusk",
+    "year": 2019,
+    "dimensions": "46x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-226.jpeg"
+  },
+  {
+    "id": "w005",
+    "title": "一排云一道浪",
+    "titleEn": "A Row of Clouds, A Wave",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-005.jpeg"
+  },
+  {
+    "id": "w030",
+    "title": "傍晚的山坡",
+    "titleEn": "Hillside at Evening",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-030.jpeg"
+  },
+  {
+    "id": "w032",
+    "title": "克孜尔的阳光",
+    "titleEn": "Sunlight in Kizil",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-032.jpeg"
+  },
+  {
+    "id": "w033",
+    "title": "养马岛",
+    "titleEn": "Yangma Island",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-033.jpeg"
+  },
+  {
+    "id": "w034",
+    "title": "养马岛的海",
+    "titleEn": "Sea of Yangma Island",
+    "year": 2018,
+    "dimensions": "46x36cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-034.jpeg"
+  },
+  {
+    "id": "w042",
+    "title": "冰原的秋",
+    "titleEn": "Autumn on the Ice Field",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-042.jpeg"
+  },
+  {
+    "id": "w050",
+    "title": "古罗马的记忆",
+    "titleEn": "Memories of Ancient Rome",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-050.jpeg"
+  },
+  {
+    "id": "w059",
+    "title": "大河边",
+    "titleEn": "By the Great River",
+    "year": 2018,
+    "dimensions": "46x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-059.jpeg"
+  },
+  {
+    "id": "w078",
+    "title": "山的对话",
+    "titleEn": "Dialogue of Mountains",
+    "year": 2018,
+    "dimensions": "40x50cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-078.jpeg"
+  },
+  {
+    "id": "w081",
+    "title": "左云的云",
+    "titleEn": "Clouds of Zuoyun",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-081.jpeg"
+  },
+  {
+    "id": "w083",
+    "title": "巴黎近郊的农宅",
+    "titleEn": "Farmhouse in Paris Suburbs",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-083.jpeg"
+  },
+  {
+    "id": "w089",
+    "title": "恒山的云",
+    "titleEn": "Clouds of Mount Heng",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-089.jpeg"
+  },
+  {
+    "id": "w092",
+    "title": "斜阳下的山坡",
+    "titleEn": "Hillside Under Slanting Sun",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-092.jpeg"
+  },
+  {
+    "id": "w093",
+    "title": "斜阳下的秋野",
+    "titleEn": "Autumn Fields Under Slanting Sun",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-093.jpeg"
+  },
+  {
+    "id": "w094",
+    "title": "旅途中的风景",
+    "titleEn": "Scenery on the Journey",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-094.jpeg"
+  },
+  {
+    "id": "w095",
+    "title": "旅途中的风景",
+    "titleEn": "Scenery on the Journey",
+    "year": 2018,
+    "dimensions": "31x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-095.jpg"
+  },
+  {
+    "id": "w097",
+    "title": "旧金山的海边",
+    "titleEn": "San Francisco Seaside",
+    "year": 2018,
+    "dimensions": "31x23cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-097.jpeg"
+  },
+  {
+    "id": "w100",
+    "title": "晋南的秋雨",
+    "titleEn": "Autumn Rain in Southern Shanxi",
+    "year": 2018,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-100.jpeg"
+  },
+  {
+    "id": "w103",
+    "title": "晨雾中的马德里",
+    "titleEn": "Madrid in Morning Mist",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-103.jpeg"
+  },
+  {
+    "id": "w104",
+    "title": "暮色归途",
+    "titleEn": "Homeward at Dusk",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-104.jpeg"
+  },
+  {
+    "id": "w105",
+    "title": "暮霭中的海",
+    "titleEn": "Sea in Evening Mist",
+    "year": 2018,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-105.jpg"
+  },
+  {
+    "id": "w106",
+    "title": "暮霭中的海",
+    "titleEn": "Sea in Evening Mist",
+    "year": 2018,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-106.jpeg"
+  },
+  {
+    "id": "w107",
+    "title": "有三角梅的村头",
+    "titleEn": "Village with Bougainvillea",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-107.jpeg"
+  },
+  {
+    "id": "w118",
+    "title": "梵高的故乡",
+    "titleEn": "Van Gogh's Hometown",
+    "year": 2018,
+    "dimensions": "31x23cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-118.jpeg"
+  },
+  {
+    "id": "w119",
+    "title": "模糊的窗外",
+    "titleEn": "Blurry View Outside the Window",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-119.jpeg"
+  },
+  {
+    "id": "w120",
+    "title": "正午的山野",
+    "titleEn": "Mountain Wilderness at Noon",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-120.jpeg"
+  },
+  {
+    "id": "w124",
+    "title": "河边的小路",
+    "titleEn": "Path by the River",
+    "year": 2018,
+    "dimensions": "31x23cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-124.jpeg"
+  },
+  {
+    "id": "w127",
+    "title": "沼泽与教堂",
+    "titleEn": "Swamp and Church",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-127.jpeg"
+  },
+  {
+    "id": "w132",
+    "title": "海边的路",
+    "titleEn": "Road by the Sea",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-132.jpeg"
+  },
+  {
+    "id": "w133",
+    "title": "海边的遗迹",
+    "titleEn": "Ruins by the Sea",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-133.jpeg"
+  },
+  {
+    "id": "w134",
+    "title": "海阳的云",
+    "titleEn": "Clouds of Haiyang",
+    "year": 2018,
+    "dimensions": "46x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-134.jpeg"
+  },
+  {
+    "id": "w137",
+    "title": "游艇",
+    "titleEn": "Yacht",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-137.jpeg"
+  },
+  {
+    "id": "w159",
+    "title": "秋天的野草坡",
+    "titleEn": "Wild Grass Slope in Autumn",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-159.jpeg"
+  },
+  {
+    "id": "w160",
+    "title": "秋林和小路",
+    "titleEn": "Autumn Forest and Path",
+    "year": 2018,
+    "dimensions": "23x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-160.jpeg"
+  },
+  {
+    "id": "w161",
+    "title": "秋水",
+    "titleEn": "Autumn Water",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-161.jpeg"
+  },
+  {
+    "id": "w162",
+    "title": "秋高气爽",
+    "titleEn": "Crisp Autumn Air",
+    "year": 2018,
+    "dimensions": "46x36cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-162.jpeg"
+  },
+  {
+    "id": "w166",
+    "title": "红坡绿地忆巴蜀",
+    "titleEn": "Red Slopes and Green Fields - Memories of Sichuan",
+    "year": 2018,
+    "dimensions": "23x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-166.jpeg"
+  },
+  {
+    "id": "w171",
+    "title": "绿山与夕阳",
+    "titleEn": "Green Mountains and Sunset",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-171.jpeg"
+  },
+  {
+    "id": "w179",
+    "title": "缅因的礁石",
+    "titleEn": "Maine Rocks",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-179.jpeg"
+  },
+  {
+    "id": "w181",
+    "title": "罗马假日",
+    "titleEn": "Roman Holiday",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-181.jpeg"
+  },
+  {
+    "id": "w190",
+    "title": "街",
+    "titleEn": "Street",
+    "year": 2018,
+    "dimensions": "36x26cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-190.jpeg"
+  },
+  {
+    "id": "w195",
+    "title": "观山系列--西域龟兹之神山净水",
+    "titleEn": "Mountain Series - Sacred Mountain and Pure Water of Kucha",
+    "year": 2018,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-195.jpg"
+  },
+  {
+    "id": "w196",
+    "title": "观山系列-冰湖",
+    "titleEn": "Mountain Series - Frozen Lake",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-196.jpeg"
+  },
+  {
+    "id": "w201",
+    "title": "远山有雪",
+    "titleEn": "Snow on Distant Mountains",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-201.jpeg"
+  },
+  {
+    "id": "w210",
+    "title": "雨后的乡路",
+    "titleEn": "Country Road After Rain",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-210.jpeg"
+  },
+  {
+    "id": "w224",
+    "title": "骄阳与热土",
+    "titleEn": "Scorching Sun and Hot Earth",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-224.jpeg"
+  },
+  {
+    "id": "w228",
+    "title": "黄石公园的松林",
+    "titleEn": "Pine Forest in Yellowstone",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-228.jpeg"
+  },
+  {
+    "id": "w231",
+    "title": "黄石的山",
+    "titleEn": "Mountains of Yellowstone",
+    "year": 2018,
+    "dimensions": "23x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-231.jpeg"
+  },
+  {
+    "id": "w233",
+    "title": "龙门天关的黄昏",
+    "titleEn": "Dusk at Longmen Tianguan",
+    "year": 2018,
+    "dimensions": "41x31cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-233.jpeg"
+  },
+  {
+    "id": "w235",
+    "title": "龟兹暮色",
+    "titleEn": "Twilight in Kucha",
+    "year": 2018,
+    "dimensions": "61x46cm",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-235.jpeg"
+  },
+  {
+    "id": "w001",
+    "title": "unnamed",
+    "titleEn": "Untitled",
+    "year": 0,
+    "dimensions": "",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-001.jpg"
+  },
+  {
+    "id": "w002",
+    "title": "unnamed",
+    "titleEn": "Untitled",
+    "year": 0,
+    "dimensions": "",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-002.jpg"
+  },
+  {
+    "id": "w003",
+    "title": "unnamed",
+    "titleEn": "Untitled",
+    "year": 0,
+    "dimensions": "",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-003.jpg"
+  },
+  {
+    "id": "w004",
+    "title": "unnamed",
+    "titleEn": "Untitled",
+    "year": 0,
+    "dimensions": "",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-004.jpg"
+  },
+  {
+    "id": "w237",
+    "title": "unnamed",
+    "titleEn": "Untitled",
+    "year": 0,
+    "dimensions": "",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-237.jpeg"
+  },
+  {
+    "id": "w238",
+    "title": "unnamed",
+    "titleEn": "Untitled",
+    "year": 0,
+    "dimensions": "",
+    "category": "watercolor",
+    "imageUrl": "/images/watercolor/watercolor-238.jpg"
   },
   {
     "id": "003",
@@ -45,15 +2169,6 @@
     "imageUrl": "https://picsum.photos/seed/painting105/800/600"
   },
   {
-    "id": "006",
-    "title": "青岛老街",
-    "titleEn": "Old Streets of Qingdao",
-    "year": 2017,
-    "dimensions": "53x38cm",
-    "category": "watercolor",
-    "imageUrl": "https://picsum.photos/seed/painting106/800/600"
-  },
-  {
     "id": "007",
     "title": "众神的黄昏",
     "titleEn": "Twilight of the Gods",
@@ -72,24 +2187,6 @@
     "imageUrl": "https://picsum.photos/seed/art008/800/600"
   },
   {
-    "id": "009",
-    "title": "荷花",
-    "titleEn": "Lotus",
-    "year": 1991,
-    "dimensions": "68x45cm",
-    "category": "watercolor",
-    "imageUrl": "https://picsum.photos/seed/art009/800/600"
-  },
-  {
-    "id": "010",
-    "title": "青花",
-    "titleEn": "Blue and White Porcelain",
-    "year": 1991,
-    "dimensions": "68x45cm",
-    "category": "watercolor",
-    "imageUrl": "https://picsum.photos/seed/art010/800/600"
-  },
-  {
     "id": "011",
     "title": "白山黑水",
     "titleEn": "White Mountains Black Waters",
@@ -97,24 +2194,6 @@
     "dimensions": "100x80cm",
     "category": "oil",
     "imageUrl": "https://picsum.photos/seed/art011/800/600"
-  },
-  {
-    "id": "012",
-    "title": "巴黎街景",
-    "titleEn": "Paris Street View",
-    "year": 1997,
-    "dimensions": "53x38cm",
-    "category": "watercolor",
-    "imageUrl": "https://picsum.photos/seed/art012/800/600"
-  },
-  {
-    "id": "013",
-    "title": "古镇晨曦",
-    "titleEn": "Dawn at Ancient Town",
-    "year": 2015,
-    "dimensions": "76x56cm",
-    "category": "watercolor",
-    "imageUrl": "https://picsum.photos/seed/art013/800/600"
   },
   {
     "id": "014",
@@ -126,24 +2205,6 @@
     "imageUrl": "https://picsum.photos/seed/art014/800/600"
   },
   {
-    "id": "015",
-    "title": "齐白石——自然",
-    "titleEn": "Qi Baishi - Nature",
-    "year": 2001,
-    "dimensions": "50x40cm",
-    "category": "watercolor",
-    "imageUrl": "https://picsum.photos/seed/art015/800/600"
-  },
-  {
-    "id": "016",
-    "title": "欧洲风情",
-    "titleEn": "European Charm",
-    "year": 2010,
-    "dimensions": "53x38cm",
-    "category": "watercolor",
-    "imageUrl": "https://picsum.photos/seed/art016/800/600"
-  },
-  {
     "id": "017",
     "title": "秋日私语",
     "titleEn": "Autumn Whispers",
@@ -151,24 +2212,6 @@
     "dimensions": "80x60cm",
     "category": "oil",
     "imageUrl": "https://picsum.photos/seed/art017/800/600"
-  },
-  {
-    "id": "018",
-    "title": "山间小路",
-    "titleEn": "Mountain Path",
-    "year": 2008,
-    "dimensions": "53x38cm",
-    "category": "watercolor",
-    "imageUrl": "https://picsum.photos/seed/art018/800/600"
-  },
-  {
-    "id": "019",
-    "title": "雪中梅",
-    "titleEn": "Plum Blossoms in Snow",
-    "year": 2005,
-    "dimensions": "68x45cm",
-    "category": "watercolor",
-    "imageUrl": "https://picsum.photos/seed/art019/800/600"
   },
   {
     "id": "020",
@@ -180,15 +2223,6 @@
     "imageUrl": "https://picsum.photos/seed/art020/800/600"
   },
   {
-    "id": "021",
-    "title": "渔港晚霞",
-    "titleEn": "Sunset at Fishing Port",
-    "year": 2013,
-    "dimensions": "76x56cm",
-    "category": "watercolor",
-    "imageUrl": "https://picsum.photos/seed/art021/800/600"
-  },
-  {
     "id": "022",
     "title": "花开富贵",
     "titleEn": "Blooming Prosperity",
@@ -198,15 +2232,6 @@
     "imageUrl": "https://picsum.photos/seed/art022/800/600"
   },
   {
-    "id": "023",
-    "title": "西湖春色",
-    "titleEn": "Spring at West Lake",
-    "year": 2011,
-    "dimensions": "53x38cm",
-    "category": "watercolor",
-    "imageUrl": "https://picsum.photos/seed/art023/800/600"
-  },
-  {
     "id": "024",
     "title": "北国风光",
     "titleEn": "Northern Scenery",
@@ -214,15 +2239,6 @@
     "dimensions": "150x120cm",
     "category": "oil",
     "imageUrl": "https://picsum.photos/seed/art024/800/600"
-  },
-  {
-    "id": "025",
-    "title": "江畔夕阳",
-    "titleEn": "Sunset by the River",
-    "year": 2009,
-    "dimensions": "68x45cm",
-    "category": "watercolor",
-    "imageUrl": "https://picsum.photos/seed/art025/800/600"
   },
   {
     "id": "026",

@@ -27,8 +27,11 @@
   "about": {
     "title": "关于",
     "biography": "简介",
-    "awards": "主要参展获奖",
-    "timeline": "年表"
+    "exhibitions": "主要作品参展",
+    "jury": "主要评审",
+    "awards": "主要获奖",
+    "muralProjects": "主要壁画项目",
+    "publicationsTitle": "主要著作出版"
   },
   "artwork": {
     "dimensions": "尺寸",
@@ -39,7 +42,7 @@
     "viewingArtwork": "正在查看作品"
   },
   "footer": {
-    "copyright": "© 2024 郗海飞 版权所有"
+    "copyright": "© 2025 郗海飞 版权所有"
   },
   "publications": {
     "publisher": "出版社",
