@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useLocale } from 'next-intl';
 import type { Artwork } from '@/lib/types';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { cn, getImageUrl } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface LightBoxProps {
@@ -131,7 +131,7 @@ export default function LightBox({
               className="flex-1 h-full flex items-center justify-center"
             >
               <Image
-                src={artwork.imageUrl}
+                src={getImageUrl(artwork.imageUrl)}
                 alt={title}
                 width={1200}
                 height={900}

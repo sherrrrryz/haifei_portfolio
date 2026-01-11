@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useLocale } from 'next-intl';
 import type { Artwork } from '@/lib/types';
 import { Card, CardContent } from '@/components/ui/card';
-import { cn } from '@/lib/utils';
+import { cn, getImageUrl } from '@/lib/utils';
 
 interface ArtworkCardProps {
   artwork: Artwork;
@@ -26,7 +26,7 @@ export default function ArtworkCard({ artwork, onClick }: ArtworkCardProps) {
       <CardContent className="p-0">
         <div className="relative overflow-hidden">
           <Image
-            src={artwork.imageUrl}
+            src={getImageUrl(artwork.imageUrl)}
             alt={title}
             width={800}
             height={600}
