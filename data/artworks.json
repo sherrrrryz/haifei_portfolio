@@ -2142,147 +2142,264 @@
     "imageUrl": "/images/watercolor/watercolor-238.jpg"
   },
   {
-    "id": "003",
-    "title": "向日葵的风景",
-    "titleEn": "Landscape with Sunflowers",
-    "year": 2019,
-    "dimensions": "100x80cm",
-    "category": "oil",
-    "imageUrl": "https://picsum.photos/seed/painting103/800/600"
-  },
-  {
-    "id": "004",
-    "title": "都市的诱惑",
-    "titleEn": "Urban Temptation",
-    "year": 2018,
-    "dimensions": "120x100cm",
-    "category": "oil",
-    "imageUrl": "https://picsum.photos/seed/painting104/800/600"
-  },
-  {
-    "id": "005",
-    "title": "春潮涌动",
-    "titleEn": "Spring Tide Rising",
-    "year": 2014,
-    "dimensions": "200x150cm",
-    "category": "oil",
-    "imageUrl": "https://picsum.photos/seed/painting105/800/600"
-  },
-  {
-    "id": "007",
-    "title": "众神的黄昏",
-    "titleEn": "Twilight of the Gods",
-    "year": 1996,
-    "dimensions": "150x120cm",
-    "category": "oil",
-    "imageUrl": "https://picsum.photos/seed/art007/800/600"
-  },
-  {
-    "id": "008",
-    "title": "华丽家族",
-    "titleEn": "Magnificent Family",
-    "year": 2002,
-    "dimensions": "180x150cm",
-    "category": "oil",
-    "imageUrl": "https://picsum.photos/seed/art008/800/600"
-  },
-  {
-    "id": "011",
-    "title": "白山黑水",
-    "titleEn": "White Mountains Black Waters",
-    "year": 2004,
-    "dimensions": "100x80cm",
-    "category": "oil",
-    "imageUrl": "https://picsum.photos/seed/art011/800/600"
-  },
-  {
-    "id": "014",
-    "title": "夏夜",
-    "titleEn": "Summer Night",
-    "year": 1990,
-    "dimensions": "120x100cm",
-    "category": "oil",
-    "imageUrl": "https://picsum.photos/seed/art014/800/600"
-  },
-  {
-    "id": "017",
-    "title": "秋日私语",
-    "titleEn": "Autumn Whispers",
-    "year": 2012,
-    "dimensions": "80x60cm",
-    "category": "oil",
-    "imageUrl": "https://picsum.photos/seed/art017/800/600"
-  },
-  {
-    "id": "020",
-    "title": "城市记忆",
-    "titleEn": "City Memories",
-    "year": 2016,
-    "dimensions": "100x80cm",
-    "category": "oil",
-    "imageUrl": "https://picsum.photos/seed/art020/800/600"
-  },
-  {
-    "id": "022",
-    "title": "花开富贵",
-    "titleEn": "Blooming Prosperity",
-    "year": 1995,
-    "dimensions": "120x100cm",
-    "category": "oil",
-    "imageUrl": "https://picsum.photos/seed/art022/800/600"
-  },
-  {
-    "id": "024",
-    "title": "北国风光",
-    "titleEn": "Northern Scenery",
-    "year": 2007,
-    "dimensions": "150x120cm",
-    "category": "oil",
-    "imageUrl": "https://picsum.photos/seed/art024/800/600"
-  },
-  {
-    "id": "026",
-    "title": "城市之光",
-    "titleEn": "City Lights",
-    "year": 2018,
-    "dimensions": "1200x400cm",
+    "id": "mural_001",
+    "title": "东方法治进程",
+    "titleEn": "The Progress of Eastern Rule of Law",
+    "year": 2006,
+    "dimensions": "600x400cm",
     "category": "mural",
-    "imageUrl": "https://picsum.photos/seed/mural001/800/600"
+    "imageUrl": "/images/mural/mural_001.jpg"
   },
   {
-    "id": "027",
-    "title": "丝绸之路",
-    "titleEn": "Silk Road",
+    "id": "mural_002",
+    "title": "山影（局部1）",
+    "titleEn": "Mountain Shadow (Detail 1)",
+    "year": 2017,
+    "dimensions": "228.5x160cm",
+    "category": "mural",
+    "imageUrl": "/images/mural/mural_002.jpg"
+  },
+  {
+    "id": "mural_003",
+    "title": "山影（局部2）",
+    "titleEn": "Mountain Shadow (Detail 2)",
+    "year": 2017,
+    "dimensions": "228.5x160cm",
+    "category": "mural",
+    "imageUrl": "/images/mural/mural_003.jpg"
+  },
+  {
+    "id": "mural_004",
+    "title": "山影（局部3）",
+    "titleEn": "Mountain Shadow (Detail 3)",
+    "year": 2017,
+    "dimensions": "228.5x160cm",
+    "category": "mural",
+    "imageUrl": "/images/mural/mural_004.jpg"
+  },
+  {
+    "id": "mural_005",
+    "title": "山影（局部4）",
+    "titleEn": "Mountain Shadow (Detail 4)",
+    "year": 2017,
+    "dimensions": "228.5x160cm",
+    "category": "mural",
+    "imageUrl": "/images/mural/mural_005.jpg"
+  },
+  {
+    "id": "mural_006",
+    "title": "山影",
+    "titleEn": "Mountain Shadow",
+    "year": 2017,
+    "dimensions": "228.5x160cm",
+    "category": "mural",
+    "imageUrl": "/images/mural/mural_006.jpg"
+  },
+  {
+    "id": "mural_007",
+    "title": "山水同城",
+    "titleEn": "Mountains and Waters in One City",
     "year": 2015,
-    "dimensions": "2000x300cm",
+    "dimensions": "2100x270cm",
     "category": "mural",
-    "imageUrl": "https://picsum.photos/seed/mural002/800/600"
+    "imageUrl": "/images/mural/mural_007.jpg"
   },
   {
-    "id": "028",
-    "title": "海上明珠",
-    "titleEn": "Pearl of the Sea",
+    "id": "mural_008",
+    "title": "春潮",
+    "titleEn": "Spring Tide",
     "year": 2012,
-    "dimensions": "800x500cm",
+    "dimensions": "2930x320cm",
     "category": "mural",
-    "imageUrl": "https://picsum.photos/seed/mural003/800/600"
+    "imageUrl": "/images/mural/mural_008.jpg"
   },
   {
-    "id": "029",
-    "title": "和谐家园",
-    "titleEn": "Harmonious Home",
-    "year": 2010,
-    "dimensions": "1500x350cm",
+    "id": "mural_009",
+    "title": "朱熹常德讲学",
+    "titleEn": "Zhu Xi Teaching in Changde",
+    "year": 2020,
+    "dimensions": "16x3.7m",
     "category": "mural",
-    "imageUrl": "https://picsum.photos/seed/mural004/800/600"
+    "imageUrl": "/images/mural/mural_009.jpg"
   },
   {
-    "id": "030",
-    "title": "时代印记",
-    "titleEn": "Mark of the Era",
+    "id": "mural_010",
+    "title": "永远盛开的紫荆花",
+    "titleEn": "Forever Blooming Bauhinia",
+    "year": 1997,
+    "dimensions": "",
+    "category": "mural",
+    "imageUrl": "/images/mural/mural_010.jpg"
+  },
+  {
+    "id": "mural_011",
+    "title": "法治天下",
+    "titleEn": "Rule of Law Under Heaven",
+    "year": 2006,
+    "dimensions": "600x400cm",
+    "category": "mural",
+    "imageUrl": "/images/mural/mural_011.jpg"
+  },
+  {
+    "id": "mural_012",
+    "title": "西方法治进程",
+    "titleEn": "The Progress of Western Rule of Law",
+    "year": 2006,
+    "dimensions": "600x400cm",
+    "category": "mural",
+    "imageUrl": "/images/mural/mural_012.jpg"
+  },
+  {
+    "id": "mural_013",
+    "title": "中华世纪坛壁画《中华千秋颂》",
+    "titleEn": "China Millennium Monument Mural: Ode to China Through the Ages",
+    "year": 0,
+    "dimensions": "",
+    "category": "mural",
+    "imageUrl": "/images/mural/mural_013.jpg"
+  },
+  {
+    "id": "mural_014",
+    "title": "中华千秋颂（局部）",
+    "titleEn": "Ode to China Through the Ages (Detail)",
+    "year": 2000,
+    "dimensions": "500x11700cm",
+    "category": "mural",
+    "imageUrl": "/images/mural/mural_014.jpg"
+  },
+  {
+    "id": "mural_015",
+    "title": "人民大会堂北大厅壁画《锦绣中华》",
+    "titleEn": "Great Hall of the People North Hall Mural: Splendid China",
+    "year": 2009,
+    "dimensions": "22.5x5.3m",
+    "category": "mural",
+    "imageUrl": "/images/mural/mural_015.jpg"
+  },
+  {
+    "id": "mural_016",
+    "title": "人民大会堂北大厅壁画《锦绣中华》（局部）",
+    "titleEn": "Splendid China (Detail)",
+    "year": 0,
+    "dimensions": "",
+    "category": "mural",
+    "imageUrl": "/images/mural/mural_016.jpg"
+  },
+  {
+    "id": "mural_017",
+    "title": "永恒的动力",
+    "titleEn": "Eternal Power",
     "year": 2008,
-    "dimensions": "1000x600cm",
+    "dimensions": "300x1500cm",
     "category": "mural",
-    "imageUrl": "https://picsum.photos/seed/mural005/800/600"
+    "imageUrl": "/images/mural/mural_017.jpg"
+  },
+  {
+    "id": "mural_018",
+    "title": "海之舞",
+    "titleEn": "Dance of the Sea",
+    "year": 2015,
+    "dimensions": "36x4.5m",
+    "category": "mural",
+    "imageUrl": "/images/mural/mural_018.jpg"
+  },
+  {
+    "id": "oil_001",
+    "title": "天堂",
+    "titleEn": "Paradise",
+    "year": 2015,
+    "dimensions": "90x60cm",
+    "category": "oil",
+    "imageUrl": "/images/oil/oil_001.jpg"
+  },
+  {
+    "id": "oil_002",
+    "title": "法国Gasny的午后",
+    "titleEn": "Afternoon in Gasny, France",
+    "year": 2004,
+    "dimensions": "",
+    "category": "oil",
+    "imageUrl": "/images/oil/oil_002.jpg"
+  },
+  {
+    "id": "oil_003",
+    "title": "观山系列--西域龟兹之天路",
+    "titleEn": "Mountain Gazing Series - Kucha: Road to Heaven",
+    "year": 2015,
+    "dimensions": "120x80cm",
+    "category": "oil",
+    "imageUrl": "/images/oil/oil_003.jpg"
+  },
+  {
+    "id": "oil_004",
+    "title": "观山系列--西域龟兹之洪荒的记忆",
+    "titleEn": "Mountain Gazing Series - Kucha: Primordial Memories",
+    "year": 2015,
+    "dimensions": "120x80cm",
+    "category": "oil",
+    "imageUrl": "/images/oil/oil_004.jpg"
+  },
+  {
+    "id": "oil_005",
+    "title": "长城晨曦",
+    "titleEn": "Dawn at the Great Wall",
+    "year": 2020,
+    "dimensions": "300x226cm",
+    "category": "oil",
+    "imageUrl": "/images/oil/oil_005.jpeg"
+  },
+  {
+    "id": "oil_006",
+    "title": "雨中的旷野",
+    "titleEn": "Wilderness in the Rain",
+    "year": 0,
+    "dimensions": "90x60cm",
+    "category": "oil",
+    "imageUrl": "/images/oil/oil_006.jpg"
+  },
+  {
+    "id": "oil_007",
+    "title": "龟兹印象--神山净水",
+    "titleEn": "Kucha Impressions - Sacred Mountain, Pure Water",
+    "year": 2018,
+    "dimensions": "61x46cm",
+    "category": "oil",
+    "imageUrl": "/images/oil/oil_007.jpg"
+  },
+  {
+    "id": "oil_008",
+    "title": "龟兹印象-克孜尔木扎提河的黄昏",
+    "titleEn": "Kucha Impressions - Dusk on the Kizil Muzati River",
+    "year": 2016,
+    "dimensions": "90x60cm",
+    "category": "oil",
+    "imageUrl": "/images/oil/oil_008.jpg"
+  },
+  {
+    "id": "oil_009",
+    "title": "龟兹印象-远古山水",
+    "titleEn": "Kucha Impressions - Ancient Landscape",
+    "year": 2015,
+    "dimensions": "90x60cm",
+    "category": "oil",
+    "imageUrl": "/images/oil/oil_009.jpg"
+  },
+  {
+    "id": "oil_010",
+    "title": "白山黑水的肖像",
+    "titleEn": "Portrait of White Mountains and Black Waters",
+    "year": 2014,
+    "dimensions": "180x130cm",
+    "category": "oil",
+    "imageUrl": "/images/oil/oil_010.jpg"
+  },
+  {
+    "id": "oil_011",
+    "title": "观山系列-西域龟兹之印象-正午干涸的荒野",
+    "titleEn": "Mountain Gazing Series - Kucha: The Parched Wilderness at Noon",
+    "year": 2015,
+    "dimensions": "120x80cm",
+    "category": "oil",
+    "imageUrl": "/images/oil/oil_011.jpg"
   }
 ]
