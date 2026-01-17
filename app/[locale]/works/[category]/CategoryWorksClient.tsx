@@ -60,7 +60,7 @@ export default function CategoryWorksClient({ category }: CategoryWorksClientPro
   return (
     <div className="min-h-screen">
       {/* Year Filter */}
-      <div className="flex justify-start pb-[18px]">
+      <div className="flex justify-start pt-3 md:pt-0 md:pb-[18px]">
         <Select
           value={selectedYear?.toString() ?? ''}
           onValueChange={(value) => setSelectedYear(value === 'all' ? null : Number(value))}

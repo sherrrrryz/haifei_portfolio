@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/i18n/navigation';
 import { useLocale } from 'next-intl';
+import Image from 'next/image';
 import {
   Sidebar as SidebarUI,
   SidebarContent,
@@ -19,6 +20,7 @@ import { cn } from '@/lib/utils';
 function NavLinks() {
   const t = useTranslations('nav');
   const pathname = usePathname();
+  const locale = useLocale();
   const { setOpenMobile } = useSidebar();
 
   const navLinks = [
@@ -38,10 +40,11 @@ function NavLinks() {
             asChild
             isActive={pathname === link.href}
             className={cn(
-              'text-lg font-light uppercase text-muted-foreground',
+              'text-lg uppercase text-muted-foreground',
+              locale === 'zh' ? 'font-normal' : 'font-light',
               'transition-colors duration-300 hover:text-foreground',
               'hover:bg-transparent active:bg-transparent data-[active=true]:bg-transparent',
-              'data-[active=true]:text-foreground data-[active=true]:font-normal',
+              'data-[active=true]:text-foreground',
               'h-auto px-0 py-2 rounded-none'
             )}
             onClick={() => setOpenMobile(false)}
@@ -100,6 +103,13 @@ export default function Sidebar() {
         >
           {locale === 'zh' ? '郗海飞' : 'XI HAIFEI'}
         </Link>
+        <Image
+          src="/signature.jpg"
+          alt="Xi Haifei Signature"
+          width={96}
+          height={48}
+          className="object-contain"
+        />
       </SidebarHeader>
 
       <SidebarContent>

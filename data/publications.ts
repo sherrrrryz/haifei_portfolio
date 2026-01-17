@@ -41,7 +41,7 @@ export const publications: Publication[] = [
       zh: '中国设计批评：城市的表情',
       en: 'Chinese Design Criticism: The Expression of Cities',
     },
-    coverUrl: 'https://picsum.photos/seed/book001/400/500',
+    coverUrl: '/images/publications/city-expression.jpg',
     publisher: {
       zh: '湖南美术出版社',
       en: 'Hunan Fine Arts Publishing House',
@@ -73,36 +73,71 @@ export const publications: Publication[] = [
   {
     id: '002',
     title: {
-      zh: '水彩的魅力',
-      en: 'The Charm of Watercolor',
+      zh: '壁画艺术',
+      en: 'Mural Art',
     },
-    coverUrl: 'https://picsum.photos/seed/book002/400/500',
+    coverUrl: '/images/publications/mural-art.jpg',
     publisher: {
-      zh: '人民美术出版社',
-      en: 'People\'s Fine Arts Publishing House',
+      zh: '吉林美术出版社',
+      en: 'Jilin Fine Arts Publishing House',
     },
     author: {
       zh: '郗海飞',
       en: 'Xi Haifei',
     },
-    publishDate: '2010.03',
+    publishDate: '',
+    format: {
+      zh: '16开',
+      en: '16mo',
+    },
+    printRun: {
+      zh: '',
+      en: '',
+    },
+    category: {
+      zh: '广告设计',
+      en: 'Advertising Design',
+    },
+    price: '23.50',
+    isbn: '',
+    summary: {
+      zh: '目录：\n\n第一章 壁画艺术概述（历史的比较、中西壁画艺术发展对比简表、现代本国壁画艺术的复兴）\n\n第二章 现状与发展（主流与样式、材料与审美、功能与设计、方法与实践）\n\n第三章 基本工艺简介（壁画常用材料、丙烯壁画的制作方法简介、壁毯的制作方法简介）\n\n后记 关于"装饰画"的断想等',
+      en: 'Table of Contents:\n\nChapter 1: Overview of Mural Art (Historical comparison, Comparative chart of Chinese and Western mural art development, Revival of modern domestic mural art)\n\nChapter 2: Current Status and Development (Mainstream and styles, Materials and aesthetics, Function and design, Methods and practice)\n\nChapter 3: Introduction to Basic Techniques (Common mural materials, Introduction to acrylic mural production methods, Introduction to tapestry production methods)\n\nAfterword: Thoughts on "Decorative Painting", etc.',
+    },
+  },
+  {
+    id: '003',
+    title: {
+      zh: '中国壁画·清华大学美术学院卷',
+      en: 'Chinese Murals: Tsinghua University Academy of Fine Arts Volume',
+    },
+    coverUrl: '/images/publications/chinese-mural-tsinghua.jpg',
+    publisher: {
+      zh: '江苏凤凰美术出版社',
+      en: 'Jiangsu Phoenix Fine Arts Publishing House',
+    },
+    author: {
+      zh: '郗海飞',
+      en: 'Xi Haifei',
+    },
+    publishDate: '',
     format: {
       zh: '8开',
       en: '8vo',
     },
     printRun: {
-      zh: '2010年3月第一次',
-      en: 'First printing, March 2010',
+      zh: '2015年9月第一次',
+      en: 'First printing, September 2015',
     },
     category: {
-      zh: '艺术技法',
-      en: 'Art Techniques',
+      zh: '中国画',
+      en: 'Chinese Painting',
     },
     price: '128.00',
-    isbn: '978-7-102-05123-4',
+    isbn: '978-7-5344-8313-4',
     summary: {
-      zh: '本书系统介绍了水彩画的基本技法与创作理念，收录了作者多年来的代表作品及创作心得。书中详细讲解了水彩画的材料选择、色彩运用、构图技巧等内容，适合各层次的水彩爱好者学习参考。',
-      en: 'This book systematically introduces the basic techniques and creative concepts of watercolor painting, featuring the author\'s representative works and creative insights over the years. It provides detailed explanations on material selection, color application, and composition techniques, suitable for watercolor enthusiasts of all levels.',
+      zh: '',
+      en: '',
     },
   },
 ];

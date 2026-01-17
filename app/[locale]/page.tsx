@@ -42,13 +42,13 @@ export default function HomePage() {
       {/* Cover Section */}
       {coverArtwork && (
         <section className="md:mb-20">
-          {/* Mobile: Full-screen immersive cover */}
+          {/* Mobile: Full-screen immersive cover - extends behind nav */}
           <div
-            className="md:hidden -mx-6 -mt-6 cursor-pointer"
+            className="md:hidden -mx-6 -mt-[72px] cursor-pointer"
             onClick={() => setCoverLightboxOpen(true)}
           >
             {/* Full height image - auto pan from left to right */}
-            <div className="h-[calc(100svh-164px)] relative overflow-hidden">
+            <div className="h-[calc(100svh-112px)] relative overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={getImageUrl(coverArtwork.imageUrl)}
@@ -102,7 +102,7 @@ export default function HomePage() {
       )}
 
       {/* About Section */}
-      <section className="flex flex-col lg:flex-row lg:items-center gap-[40px] lg:gap-[60px] mt-16 lg:mt-0 my-[100px] lg:my-[160px]">
+      <section className="flex flex-col lg:flex-row lg:items-center gap-[60px] lg:gap-9 mt-16 lg:mt-0 my-[100px] lg:my-[160px]">
         <div className="relative overflow-hidden w-full lg:w-[25%] lg:min-w-[260px] lg:max-w-[320px] flex-shrink-0">
           <Image
             src={getImageUrl('/images/artist-portrait.jpg')}
@@ -113,13 +113,9 @@ export default function HomePage() {
           />
         </div>
         <div className="flex flex-col justify-center max-w-[500px]">
-          {/* Title with left border */}
-          <div className="flex items-center gap-4 mb-8">
-            <div className="w-[3px] h-[28px] bg-foreground/80" />
-            <h2 className="text-[22px] font-bold uppercase tracking-[3px]">
-              {t('aboutArtist')}
-            </h2>
-          </div>
+          <h2 className="text-[22px] font-bold uppercase tracking-[3px] mb-8">
+            {t('aboutArtist')}
+          </h2>
           {/* Bio text in muted color */}
           <p className="text-[16px] leading-[1.9] text-muted-foreground mb-8 whitespace-pre-line">
             {t('bioSummary')}
@@ -137,7 +133,6 @@ export default function HomePage() {
             )}
           >
             {t('readMore')}
-            <span className="text-[15px]">→</span>
           </Link>
         </div>
       </section>
@@ -147,7 +142,7 @@ export default function HomePage() {
         <h2 className="text-2xl font-bold uppercase tracking-[2px] mb-6">
           {t('featuredWorks')}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-8 items-start">
           {featuredArtworks.map((artwork, index) => {
             const title = locale === 'en' && artwork.titleEn ? artwork.titleEn : artwork.title;
             return (

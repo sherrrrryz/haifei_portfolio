@@ -146,7 +146,7 @@ export default function LightBox({
 
             {/* Mobile Navigation Buttons - shown only on mobile */}
             {artworks.length > 1 && (
-              <div className="flex md:hidden items-center justify-center gap-8 mt-4 flex-shrink-0">
+              <div className="flex md:hidden items-center justify-center gap-8 mt-2 flex-shrink-0">
                 <button
                   onClick={goToPrevious}
                   className={cn(
@@ -177,7 +177,7 @@ export default function LightBox({
 
             {/* Info */}
             <div className={cn(
-              'mt-4 md:mt-0 md:ml-10',
+              'mt-2 md:mt-0 md:ml-6',
               'md:w-[200px] md:flex-shrink-0',
               'text-center md:text-left'
             )}>
