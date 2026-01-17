@@ -38,10 +38,10 @@ function NavLinks() {
             asChild
             isActive={pathname === link.href}
             className={cn(
-              'text-lg font-bold uppercase text-muted-foreground',
+              'text-lg font-light uppercase text-muted-foreground',
               'transition-colors duration-300 hover:text-foreground',
               'hover:bg-transparent active:bg-transparent data-[active=true]:bg-transparent',
-              'data-[active=true]:text-foreground data-[active=true]:font-bold',
+              'data-[active=true]:text-foreground data-[active=true]:font-normal',
               'h-auto px-0 py-2 rounded-none'
             )}
             onClick={() => setOpenMobile(false)}
@@ -66,8 +66,8 @@ function LanguageSwitch() {
         locale="zh"
         onClick={() => setOpenMobile(false)}
         className={cn(
-          'transition-colors duration-300',
-          locale === 'zh' ? 'text-foreground font-bold' : 'text-muted-foreground hover:text-foreground'
+          'transition-colors duration-300 font-light',
+          locale === 'zh' ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
         )}
       >
         中
@@ -78,8 +78,8 @@ function LanguageSwitch() {
         locale="en"
         onClick={() => setOpenMobile(false)}
         className={cn(
-          'transition-colors duration-300',
-          locale === 'en' ? 'text-foreground font-bold' : 'text-muted-foreground hover:text-foreground'
+          'transition-colors duration-300 font-light',
+          locale === 'en' ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
         )}
       >
         EN

@@ -6,6 +6,7 @@ import Sidebar, { SidebarTrigger } from '@/components/Sidebar';
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import { Menu } from 'lucide-react';
 import PageTransition from '@/components/PageTransition';
+import Footer from '@/components/Footer';
 
 type Props = {
   children: React.ReactNode;
@@ -52,6 +53,7 @@ export default async function LocaleLayout({ children, params }: Props) {
                 <PageTransition>
                   {children}
                 </PageTransition>
+                <Footer />
               </main>
             </SidebarInset>
           </SidebarProvider>

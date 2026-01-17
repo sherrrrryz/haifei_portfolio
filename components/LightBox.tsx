@@ -92,47 +92,47 @@ export default function LightBox({
             <X className="w-6 h-6" />
           </button>
 
-          {/* Previous Button - only show if more than 1 artwork */}
+          {/* Desktop Navigation Buttons - hidden on mobile */}
           {artworks.length > 1 && (
-            <button
-              onClick={goToPrevious}
-              className={cn(
-                'absolute left-0 top-1/2 -translate-y-1/2 z-10',
-                'w-[50px] h-[100px] flex items-center justify-center',
-                'text-foreground/35 hover:text-foreground/70',
-                'transition-colors duration-300'
-              )}
-              aria-label="Previous"
-            >
-              <ChevronLeft className="w-8 h-8" />
-            </button>
-          )}
-
-          {/* Next Button - only show if more than 1 artwork */}
-          {artworks.length > 1 && (
-            <button
-              onClick={goToNext}
-              className={cn(
-                'absolute right-0 top-1/2 -translate-y-1/2 z-10',
-                'w-[50px] h-[100px] flex items-center justify-center',
-                'text-foreground/35 hover:text-foreground/70',
-                'transition-colors duration-300'
-              )}
-              aria-label="Next"
-            >
-              <ChevronRight className="w-8 h-8" />
-            </button>
+            <>
+              <button
+                onClick={goToPrevious}
+                className={cn(
+                  'hidden md:flex',
+                  'absolute left-0 top-1/2 -translate-y-1/2 z-10',
+                  'w-[50px] h-[100px] items-center justify-center',
+                  'text-foreground/35 hover:text-foreground/70',
+                  'transition-colors duration-300'
+                )}
+                aria-label="Previous"
+              >
+                <ChevronLeft className="w-8 h-8" />
+              </button>
+              <button
+                onClick={goToNext}
+                className={cn(
+                  'hidden md:flex',
+                  'absolute right-0 top-1/2 -translate-y-1/2 z-10',
+                  'w-[50px] h-[100px] items-center justify-center',
+                  'text-foreground/35 hover:text-foreground/70',
+                  'transition-colors duration-300'
+                )}
+                aria-label="Next"
+              >
+                <ChevronRight className="w-8 h-8" />
+              </button>
+            </>
           )}
 
           {/* Content */}
-          <div className="h-full w-full flex flex-col md:flex-row items-center justify-center px-[50px] py-[65px] md:px-[5vw]">
+          <div className="h-full w-full flex flex-col items-center justify-center px-3 py-[50px] md:flex-row md:px-[5vw] md:py-[65px]">
             {/* Image */}
             <motion.div
               key={currentIndex}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
-              className="flex-1 h-full flex items-center justify-center"
+              className="flex-1 w-full flex items-center justify-center min-h-0"
             >
               <Image
                 src={getImageUrl(artwork.imageUrl)}
@@ -144,20 +144,51 @@ export default function LightBox({
               />
             </motion.div>
 
+            {/* Mobile Navigation Buttons - shown only on mobile */}
+            {artworks.length > 1 && (
+              <div className="flex md:hidden items-center justify-center gap-8 mt-4 flex-shrink-0">
+                <button
+                  onClick={goToPrevious}
+                  className={cn(
+                    'w-12 h-12 flex items-center justify-center',
+                    'text-foreground/50 active:text-foreground/80',
+                    'transition-colors duration-200'
+                  )}
+                  aria-label="Previous"
+                >
+                  <ChevronLeft className="w-8 h-8" />
+                </button>
+                <span className="text-[13px] text-muted-foreground min-w-[60px] text-center">
+                  {currentIndex + 1} / {artworks.length}
+                </span>
+                <button
+                  onClick={goToNext}
+                  className={cn(
+                    'w-12 h-12 flex items-center justify-center',
+                    'text-foreground/50 active:text-foreground/80',
+                    'transition-colors duration-200'
+                  )}
+                  aria-label="Next"
+                >
+                  <ChevronRight className="w-8 h-8" />
+                </button>
+              </div>
+            )}
+
             {/* Info */}
             <div className={cn(
-              'mt-6 md:mt-0 md:ml-10',
+              'mt-4 md:mt-0 md:ml-10',
               'md:w-[200px] md:flex-shrink-0',
               'text-center md:text-left'
             )}>
-              <h2 className="text-[15px] font-bold uppercase mb-2">{title}</h2>
+              <h2 className="text-[18px] font-light mb-2">{title}</h2>
               <p className="text-[13px] text-muted-foreground leading-[1.6]">
                 {artwork.year}
                 <br />
                 {artwork.dimensions}
               </p>
               {artworks.length > 1 && (
-                <p className="text-[12px] text-muted-foreground mt-4">
+                <p className="hidden md:block text-[12px] text-muted-foreground mt-4">
                   {currentIndex + 1} / {artworks.length}
                 </p>
               )}

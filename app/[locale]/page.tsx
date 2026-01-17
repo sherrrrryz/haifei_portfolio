@@ -61,7 +61,7 @@ export default function HomePage() {
             </div>
             {/* Title at bottom */}
             <div className="h-[80px] pt-4 px-6">
-              <h2 className="text-2xl font-bold uppercase tracking-[2px]">
+              <h2 className="text-2xl font-bold tracking-[2px]">
                 {t('coverTitle')}
               </h2>
               <p className="text-[13px] text-muted-foreground mt-1">
@@ -90,7 +90,7 @@ export default function HomePage() {
               />
             </div>
             <div className="pt-4">
-              <h2 className="text-2xl font-bold uppercase tracking-[2px]">
+              <h2 className="text-2xl font-bold tracking-[2px]">
                 {t('coverTitle')}
               </h2>
               <p className="text-[13px] text-muted-foreground mt-1">
@@ -102,8 +102,8 @@ export default function HomePage() {
       )}
 
       {/* About Section */}
-      <section className="flex flex-col md:flex-row md:items-center gap-[60px] md:gap-[48px] mt-16 md:mt-0 my-[100px] md:my-[160px]">
-        <div className="relative overflow-hidden w-[50%] min-w-[260px] max-w-[260px] md:w-[25%] md:min-w-[200px] md:max-w-[320px] flex-shrink-0">
+      <section className="flex flex-col lg:flex-row lg:items-center gap-[40px] lg:gap-[60px] mt-16 lg:mt-0 my-[100px] lg:my-[160px]">
+        <div className="relative overflow-hidden w-full lg:w-[25%] lg:min-w-[260px] lg:max-w-[320px] flex-shrink-0">
           <Image
             src={getImageUrl('/images/artist-portrait.jpg')}
             alt={locale === 'en' ? 'Xi Haifei' : '郗海飞'}
@@ -112,18 +112,32 @@ export default function HomePage() {
             className="w-full aspect-square object-cover"
           />
         </div>
-        <div className="flex flex-col justify-center">
-          <h2 className="text-2xl font-bold uppercase tracking-[2px] mb-6">
-            {t('aboutArtist')}
-          </h2>
-          <p className="text-[15px] leading-[1.8] text-foreground mb-6 whitespace-pre-line">
+        <div className="flex flex-col justify-center max-w-[500px]">
+          {/* Title with left border */}
+          <div className="flex items-center gap-4 mb-8">
+            <div className="w-[3px] h-[28px] bg-foreground/80" />
+            <h2 className="text-[22px] font-bold uppercase tracking-[3px]">
+              {t('aboutArtist')}
+            </h2>
+          </div>
+          {/* Bio text in muted color */}
+          <p className="text-[16px] leading-[1.9] text-muted-foreground mb-8 whitespace-pre-line">
             {t('bioSummary')}
           </p>
+          {/* Read more link with underline */}
           <Link
             href={`/${locale}/about`}
-            className="text-[15px] font-bold uppercase tracking-[1px] hover:opacity-70 transition-opacity duration-300 inline-block"
+            className={cn(
+              'text-[13px] font-bold uppercase tracking-[2px]',
+              'text-foreground/70 hover:text-foreground',
+              'transition-colors duration-300',
+              'inline-flex items-center gap-2',
+              'border-b-2 border-foreground/30 hover:border-foreground/60',
+              'pb-1 self-start'
+            )}
           >
-            {t('readMore')} →
+            {t('readMore')}
+            <span className="text-[15px]">→</span>
           </Link>
         </div>
       </section>
@@ -157,7 +171,7 @@ export default function HomePage() {
                     />
                   </div>
                   <div className="pt-4">
-                    <h3 className="text-[15px] font-bold uppercase leading-[19px] mb-1">
+                    <h3 className="text-[18px] font-light leading-[22px] mb-1">
                       {title}
                     </h3>
                     <p className="text-[13px] text-muted-foreground leading-[1.4]">
