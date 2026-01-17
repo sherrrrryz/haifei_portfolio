@@ -181,7 +181,7 @@ export default function LightBox({
               'md:w-[200px] md:flex-shrink-0',
               'text-center md:text-left'
             )}>
-              <h2 className="text-[18px] font-light mb-2">{title}</h2>
+              <h2 className={cn("text-[18px] mb-2", locale === 'zh' ? 'font-normal' : 'font-light')}>{title}</h2>
               <p className="text-[13px] text-muted-foreground leading-[1.6]">
                 {artwork.year}
                 <br />

@@ -38,7 +38,7 @@ export default function ArtworkCard({ artwork, onClick }: ArtworkCardProps) {
           />
         </div>
         <div className="pt-4">
-          <h3 className="text-[18px] font-light leading-[22px] mb-1">
+          <h3 className={cn("text-[18px] leading-[22px] mb-1", locale === 'zh' ? 'font-normal' : 'font-light')}>
             {title}
           </h3>
           <p className="text-[13px] text-muted-foreground leading-[1.4]">

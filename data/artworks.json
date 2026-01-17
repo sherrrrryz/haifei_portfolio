@@ -2410,5 +2410,23 @@
     "dimensions": "150x100cm",
     "category": "oil",
     "imageUrl": "/images/oil/oil_014.jpg"
+  },
+  {
+    "id": "oil_015",
+    "title": "静物",
+    "titleEn": "Still Life",
+    "year": 1994,
+    "dimensions": "100x80cm",
+    "category": "oil",
+    "imageUrl": "/images/oil/oil_015.jpg"
+  },
+  {
+    "id": "oil_016",
+    "title": "众神的黄昏",
+    "titleEn": "Twilight of the Gods",
+    "year": 1996,
+    "dimensions": "100x80cm",
+    "category": "oil",
+    "imageUrl": "/images/oil/oil_016.jpg"
   }
 ]

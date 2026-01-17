@@ -24,9 +24,9 @@ export default function NewsSection({ locale }: NewsSectionProps) {
   const [selectedNews, setSelectedNews] = useState<NewsItem | null>(null);
 
   return (
-    <section className="mb-12">
-      <div className="flex items-center justify-between border-b-2 border-foreground pb-2 mb-6">
-        <h2 className="text-[17px] font-bold">{t('artistNews')}</h2>
+    <section className="mt-6 md:mt-0 mb-12">
+      <div className="flex items-center justify-between pb-2 mb-2">
+        <h2 className="text-2xl font-bold">{t('artistNews')}</h2>
       </div>
 
       <div className="space-y-0">
@@ -36,24 +36,10 @@ export default function NewsSection({ locale }: NewsSectionProps) {
               className="py-6 cursor-pointer hover:bg-gray-50 transition-colors duration-200 -mx-4 px-4"
               onClick={() => setSelectedNews(item)}
             >
-              <div className="flex gap-6">
-                {/* Thumbnail - only show if imageUrl exists */}
-                {item.imageUrl && (
-                  <div className="flex-shrink-0">
-                    <div className="relative w-[140px] h-[100px]">
-                      <Image
-                        src={getImageUrl(item.imageUrl)}
-                        alt={item.title[lang]}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  </div>
-                )}
-
+              <div>
                 {/* Content */}
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-[15px] font-bold mb-2 leading-[1.4]">
+                <div>
+                  <h3 className="text-[17px] font-bold mb-2 leading-[1.4]">
                     {item.title[lang]}
                   </h3>
                   <p className="text-[13px] text-[#333] leading-[1.8] line-clamp-3">

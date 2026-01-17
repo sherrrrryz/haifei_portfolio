@@ -25,8 +25,8 @@ function NewsContent({ locale }: { locale: string }) {
 
       {/* Institutional Collections Section */}
       <section>
-        <div className="flex items-center justify-between border-b-2 border-foreground pb-2 mb-6">
-          <h2 className="text-[17px] font-bold">
+        <div className="flex items-center justify-between pb-2 mb-6">
+          <h2 className="text-2xl font-bold">
             {t('collections')}
           </h2>
         </div>

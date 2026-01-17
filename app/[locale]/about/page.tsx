@@ -1,6 +1,8 @@
 import { useTranslations, useLocale } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
+import Image from 'next/image';
 import { artistInfo } from '@/data/artist';
+import { getImageUrl } from '@/lib/utils';
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -19,6 +21,19 @@ function AboutContent({ locale }: { locale: string }) {
 
   return (
     <div className="min-h-screen max-w-[800px]">
+      {/* Artist Portrait */}
+      <section className="mb-12">
+        <div className="w-full max-w-[320px]">
+          <Image
+            src={getImageUrl('/images/artist-portrait.jpg')}
+            alt={locale === 'en' ? 'Xi Haifei' : '郗海飞'}
+            width={400}
+            height={400}
+            className="w-full aspect-square object-cover"
+          />
+        </div>
+      </section>
+
       {/* Biography */}
       <section className="mb-12">
         <h2 className="text-2xl font-bold uppercase tracking-[2px] mb-5">
