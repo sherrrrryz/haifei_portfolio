@@ -92,33 +92,37 @@ export default function LightBox({
             <X className="w-6 h-6" />
           </button>
 
-          {/* Previous Button */}
-          <button
-            onClick={goToPrevious}
-            className={cn(
-              'absolute left-0 top-1/2 -translate-y-1/2 z-10',
-              'w-[50px] h-[100px] flex items-center justify-center',
-              'text-foreground/35 hover:text-foreground/70',
-              'transition-colors duration-300'
-            )}
-            aria-label="Previous"
-          >
-            <ChevronLeft className="w-8 h-8" />
-          </button>
+          {/* Previous Button - only show if more than 1 artwork */}
+          {artworks.length > 1 && (
+            <button
+              onClick={goToPrevious}
+              className={cn(
+                'absolute left-0 top-1/2 -translate-y-1/2 z-10',
+                'w-[50px] h-[100px] flex items-center justify-center',
+                'text-foreground/35 hover:text-foreground/70',
+                'transition-colors duration-300'
+              )}
+              aria-label="Previous"
+            >
+              <ChevronLeft className="w-8 h-8" />
+            </button>
+          )}
 
-          {/* Next Button */}
-          <button
-            onClick={goToNext}
-            className={cn(
-              'absolute right-0 top-1/2 -translate-y-1/2 z-10',
-              'w-[50px] h-[100px] flex items-center justify-center',
-              'text-foreground/35 hover:text-foreground/70',
-              'transition-colors duration-300'
-            )}
-            aria-label="Next"
-          >
-            <ChevronRight className="w-8 h-8" />
-          </button>
+          {/* Next Button - only show if more than 1 artwork */}
+          {artworks.length > 1 && (
+            <button
+              onClick={goToNext}
+              className={cn(
+                'absolute right-0 top-1/2 -translate-y-1/2 z-10',
+                'w-[50px] h-[100px] flex items-center justify-center',
+                'text-foreground/35 hover:text-foreground/70',
+                'transition-colors duration-300'
+              )}
+              aria-label="Next"
+            >
+              <ChevronRight className="w-8 h-8" />
+            </button>
+          )}
 
           {/* Content */}
           <div className="h-full w-full flex flex-col md:flex-row items-center justify-center px-[50px] py-[65px] md:px-[5vw]">
@@ -152,9 +156,11 @@ export default function LightBox({
                 <br />
                 {artwork.dimensions}
               </p>
-              <p className="text-[12px] text-muted-foreground mt-4">
-                {currentIndex + 1} / {artworks.length}
-              </p>
+              {artworks.length > 1 && (
+                <p className="text-[12px] text-muted-foreground mt-4">
+                  {currentIndex + 1} / {artworks.length}
+                </p>
+              )}
             </div>
           </div>
         </motion.div>

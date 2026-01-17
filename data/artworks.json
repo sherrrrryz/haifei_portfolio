@@ -2401,5 +2401,32 @@
     "dimensions": "120x80cm",
     "category": "oil",
     "imageUrl": "/images/oil/oil_011.jpg"
+  },
+  {
+    "id": "oil_012",
+    "title": "霜冻",
+    "titleEn": "Frost",
+    "year": 2014,
+    "dimensions": "137x75cm",
+    "category": "oil",
+    "imageUrl": "/images/oil/oil_012.jpg"
+  },
+  {
+    "id": "oil_013",
+    "title": "雨后缅因的森林",
+    "titleEn": "Forest in Maine After Rain",
+    "year": 2013,
+    "dimensions": "130x110cm",
+    "category": "oil",
+    "imageUrl": "/images/oil/oil_013.jpg"
+  },
+  {
+    "id": "oil_014",
+    "title": "早春的邮件",
+    "titleEn": "Mail in Early Spring",
+    "year": 2014,
+    "dimensions": "150x100cm",
+    "category": "oil",
+    "imageUrl": "/images/oil/oil_014.jpg"
   }
 ]

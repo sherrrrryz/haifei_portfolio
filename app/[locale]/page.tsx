@@ -3,102 +3,157 @@
 import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
+import Link from 'next/link';
 import artworksData from '@/data/artworks.json';
 import type { Artwork } from '@/lib/types';
-import { Card, CardContent } from '@/components/ui/card';
 import { cn, getImageUrl } from '@/lib/utils';
 import LightBox from '@/components/LightBox';
 
-// Seeded random shuffle to ensure consistency between server/client
-function seededShuffle<T>(array: T[], seed: number): T[] {
-  const shuffled = [...array];
-  let currentSeed = seed;
-
-  const random = () => {
-    currentSeed = (currentSeed * 9301 + 49297) % 233280;
-    return currentSeed / 233280;
-  };
-
-  for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-  return shuffled;
-}
-
-// Get today's seed - this ensures consistency within a day
-function getTodaySeed(): number {
-  const today = new Date();
-  return today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
-}
+// Fixed featured artwork IDs
+const featuredIds = ['oil_010', 'oil_013', 'oil_014'];
 
 export default function HomePage() {
   const t = useTranslations('home');
   const locale = useLocale();
   const artworks = artworksData as Artwork[];
 
-  // Use date as seed so featured works change daily
-  const [seed] = useState(() => getTodaySeed());
-  const shuffled = seededShuffle(artworks, seed);
-  const featuredArtworks = shuffled.slice(0, 6);
+  // Get fixed featured artworks
+  const featuredArtworks = featuredIds
+    .map(id => artworks.find(a => a.id === id))
+    .filter(Boolean) as Artwork[];
 
-  // LightBox state
+  // Cover artwork data
+  const coverArtwork = artworks.find(a => a.id === 'oil_012');
+
+  // Cover lightbox state
+  const [coverLightboxOpen, setCoverLightboxOpen] = useState(false);
+
+  // Featured works LightBox state
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleImageClick = (index: number) => {
+  const handleFeaturedClick = (index: number) => {
     setCurrentIndex(index);
     setLightboxOpen(true);
   };
 
   return (
-    <div className="min-h-screen">
-      {/* Featured Works */}
+    <div className="min-h-screen space-y-20">
+      {/* Cover Section */}
+      {coverArtwork && (
+        <section>
+          <button
+            onClick={() => setCoverLightboxOpen(true)}
+            className="group block w-full text-left cursor-pointer"
+          >
+            <div className="relative overflow-hidden">
+              <Image
+                src={getImageUrl(coverArtwork.imageUrl)}
+                alt={locale === 'en' ? t('coverTitle') : coverArtwork.title}
+                width={1600}
+                height={900}
+                priority
+                className={cn(
+                  'w-full h-auto object-cover',
+                  'transition-transform duration-[0.4s] ease-out',
+                  'group-hover:scale-[1.01]'
+                )}
+              />
+            </div>
+            <div className="pt-4">
+              <h2 className="text-2xl font-bold uppercase tracking-[2px]">
+                {t('coverTitle')}
+              </h2>
+              <p className="text-[13px] text-muted-foreground mt-1">
+                {t('coverInfo')}
+              </p>
+            </div>
+          </button>
+        </section>
+      )}
+
+      {/* About Section */}
+      <section className="flex flex-col md:flex-row md:items-center gap-[60px] md:gap-[48px] my-[100px] md:my-[160px]">
+        <div className="relative overflow-hidden w-[50%] min-w-[260px] max-w-[260px] md:w-[25%] md:min-w-[200px] md:max-w-[320px] flex-shrink-0">
+          <Image
+            src={getImageUrl('/images/artist-portrait.jpg')}
+            alt={locale === 'en' ? 'Xi Haifei' : '郗海飞'}
+            width={400}
+            height={400}
+            className="w-full aspect-square object-cover"
+          />
+        </div>
+        <div className="flex flex-col justify-center">
+          <h2 className="text-2xl font-bold uppercase tracking-[2px] mb-6">
+            {t('aboutArtist')}
+          </h2>
+          <p className="text-[15px] leading-[1.8] text-foreground mb-6 whitespace-pre-line">
+            {t('bioSummary')}
+          </p>
+          <Link
+            href={`/${locale}/about`}
+            className="text-[15px] font-bold uppercase tracking-[1px] hover:opacity-70 transition-opacity duration-300 inline-block"
+          >
+            {t('readMore')} →
+          </Link>
+        </div>
+      </section>
+
+      {/* Featured Works Section */}
       <section>
-        <h2 className="text-2xl font-bold uppercase tracking-[2px] mb-[46px]">
+        <h2 className="text-2xl font-bold uppercase tracking-[2px] mb-6">
           {t('featuredWorks')}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 items-start">
           {featuredArtworks.map((artwork, index) => {
             const title = locale === 'en' && artwork.titleEn ? artwork.titleEn : artwork.title;
             return (
               <button
                 key={artwork.id}
-                onClick={() => handleImageClick(index)}
+                onClick={() => handleFeaturedClick(index)}
                 className="group block text-left cursor-pointer"
               >
-                <Card className="border-none shadow-none rounded-none bg-transparent">
-                  <CardContent className="p-0">
-                    <div className="relative overflow-hidden">
-                      <Image
-                        src={getImageUrl(artwork.imageUrl)}
-                        alt={title}
-                        width={800}
-                        height={600}
-                        className={cn(
-                          'w-full aspect-[4/3] object-cover',
-                          'transition-transform duration-[0.4s] ease-out',
-                          'group-hover:scale-[1.02]'
-                        )}
-                      />
-                    </div>
-                    <div className="pt-4">
-                      <h3 className="text-[15px] font-bold uppercase leading-[19px] mb-1">
-                        {title}
-                      </h3>
-                      <p className="text-[13px] text-muted-foreground leading-[1.4]">
-                        {artwork.year} · {artwork.dimensions}
-                      </p>
-                    </div>
-                  </CardContent>
-                </Card>
+                <div>
+                  <div className="relative overflow-hidden aspect-[4/3]">
+                    <Image
+                      src={getImageUrl(artwork.imageUrl)}
+                      alt={title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                      className={cn(
+                        'object-cover',
+                        'transition-transform duration-[0.4s] ease-out',
+                        'group-hover:scale-[1.02]'
+                      )}
+                    />
+                  </div>
+                  <div className="pt-4">
+                    <h3 className="text-[15px] font-bold uppercase leading-[19px] mb-1">
+                      {title}
+                    </h3>
+                    <p className="text-[13px] text-muted-foreground leading-[1.4]">
+                      {artwork.year > 0 ? `${artwork.year} · ` : ''}{artwork.dimensions}
+                    </p>
+                  </div>
+                </div>
               </button>
             );
           })}
         </div>
       </section>
 
-      {/* LightBox for viewing images */}
+      {/* Cover LightBox */}
+      {coverArtwork && (
+        <LightBox
+          artworks={[coverArtwork]}
+          currentIndex={0}
+          open={coverLightboxOpen}
+          onOpenChange={setCoverLightboxOpen}
+          onNavigate={() => {}}
+        />
+      )}
+
+      {/* Featured Works LightBox */}
       <LightBox
         artworks={featuredArtworks}
         currentIndex={currentIndex}
