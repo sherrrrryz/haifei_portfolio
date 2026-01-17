@@ -38,13 +38,42 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen space-y-20">
+    <div className="min-h-screen">
       {/* Cover Section */}
       {coverArtwork && (
-        <section>
+        <section className="md:mb-20">
+          {/* Mobile: Full-screen immersive cover */}
+          <div
+            className="md:hidden -mx-6 -mt-6 cursor-pointer"
+            onClick={() => setCoverLightboxOpen(true)}
+          >
+            {/* Full height image - auto pan from left to right */}
+            <div className="h-[calc(100svh-164px)] relative overflow-hidden">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={getImageUrl(coverArtwork.imageUrl)}
+                alt={locale === 'en' ? t('coverTitle') : coverArtwork.title}
+                className="h-full w-auto max-w-none object-cover"
+                style={{
+                  animation: 'slow-pan 45s linear infinite alternate'
+                }}
+              />
+            </div>
+            {/* Title at bottom */}
+            <div className="h-[80px] pt-4 px-6">
+              <h2 className="text-2xl font-bold uppercase tracking-[2px]">
+                {t('coverTitle')}
+              </h2>
+              <p className="text-[13px] text-muted-foreground mt-1">
+                {t('coverInfo')}
+              </p>
+            </div>
+          </div>
+
+          {/* Desktop: Original cover layout */}
           <button
             onClick={() => setCoverLightboxOpen(true)}
-            className="group block w-full text-left cursor-pointer"
+            className="hidden md:block group w-full text-left cursor-pointer"
           >
             <div className="relative overflow-hidden">
               <Image
@@ -73,7 +102,7 @@ export default function HomePage() {
       )}
 
       {/* About Section */}
-      <section className="flex flex-col md:flex-row md:items-center gap-[60px] md:gap-[48px] my-[100px] md:my-[160px]">
+      <section className="flex flex-col md:flex-row md:items-center gap-[60px] md:gap-[48px] mt-16 md:mt-0 my-[100px] md:my-[160px]">
         <div className="relative overflow-hidden w-[50%] min-w-[260px] max-w-[260px] md:w-[25%] md:min-w-[200px] md:max-w-[320px] flex-shrink-0">
           <Image
             src={getImageUrl('/images/artist-portrait.jpg')}
@@ -111,7 +140,7 @@ export default function HomePage() {
               <button
                 key={artwork.id}
                 onClick={() => handleFeaturedClick(index)}
-                className="group block text-left cursor-pointer"
+                className="group block text-left cursor-pointer w-full"
               >
                 <div>
                   <div className="relative overflow-hidden aspect-[4/3]">

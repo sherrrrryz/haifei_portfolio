@@ -119,3 +119,28 @@
     text-decoration: none;
   }
 }
+
+@layer utilities {
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  /* Slow pan animation from left to right */
+  .animate-slow-pan {
+    animation: slow-pan 30s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes slow-pan {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% + 100vw));
+  }
+}
