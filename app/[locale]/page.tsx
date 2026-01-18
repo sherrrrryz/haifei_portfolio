@@ -53,10 +53,7 @@ export default function HomePage() {
               <img
                 src={getImageUrl(coverArtwork.imageUrl)}
                 alt={locale === 'en' ? t('coverTitle') : coverArtwork.title}
-                className="h-full w-auto max-w-none object-cover"
-                style={{
-                  animation: 'slow-pan 45s linear infinite alternate'
-                }}
+                className="h-full w-auto max-w-none object-cover animate-slow-pan"
               />
             </div>
             {/* Title at bottom */}

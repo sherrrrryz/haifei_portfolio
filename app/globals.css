@@ -132,7 +132,9 @@
 
   /* Slow pan animation from left to right */
   .animate-slow-pan {
-    animation: slow-pan 30s ease-in-out infinite alternate;
+    animation: slow-pan 45s linear infinite alternate;
+    animation-fill-mode: both;
+    transform: translateX(0); /* Initial position before animation loads */
   }
 }
 
