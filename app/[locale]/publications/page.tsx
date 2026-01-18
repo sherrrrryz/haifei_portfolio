@@ -3,6 +3,7 @@ import { setRequestLocale } from 'next-intl/server';
 import Image from 'next/image';
 import { publications } from '@/data/publications';
 import { Separator } from '@/components/ui/separator';
+import { getImageUrl } from '@/lib/utils';
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -30,7 +31,7 @@ function PublicationsContent({ locale }: { locale: string }) {
               {/* Cover Image */}
               <div className="flex-shrink-0">
                 <Image
-                  src={pub.coverUrl}
+                  src={getImageUrl(pub.coverUrl)}
                   alt={pub.title[lang]}
                   width={300}
                   height={375}
