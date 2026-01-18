@@ -29,7 +29,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale}>
-      <body className="antialiased">
+      <body className="antialiased overflow-x-hidden">
         <NextIntlClientProvider messages={messages}>
           <SidebarProvider
             defaultOpen={true}
