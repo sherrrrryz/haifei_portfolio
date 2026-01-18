@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/i18n/navigation';
 import { useLocale } from 'next-intl';
 import Image from 'next/image';
+import signatureImg from '@/public/signature.jpg';
 import {
   Sidebar as SidebarUI,
   SidebarContent,
@@ -104,7 +105,7 @@ export default function Sidebar() {
           {locale === 'zh' ? '郗海飞' : 'XI HAIFEI'}
         </Link>
         <Image
-          src="/signature.jpg"
+          src={signatureImg}
           alt="Xi Haifei Signature"
           width={96}
           height={48}
