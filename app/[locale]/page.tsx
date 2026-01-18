@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -32,6 +32,14 @@ export default function HomePage() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Control animation start to ensure consistent behavior
+  const [animationReady, setAnimationReady] = useState(false);
+  useEffect(() => {
+    // Small delay to ensure animation starts fresh after mount
+    const timer = setTimeout(() => setAnimationReady(true), 50);
+    return () => clearTimeout(timer);
+  }, []);
+
   const handleFeaturedClick = (index: number) => {
     setCurrentIndex(index);
     setLightboxOpen(true);
@@ -53,7 +61,10 @@ export default function HomePage() {
               <img
                 src={getImageUrl(coverArtwork.imageUrl)}
                 alt={locale === 'en' ? t('coverTitle') : coverArtwork.title}
-                className="absolute left-0 top-0 h-full w-auto min-w-[120vw] max-w-none object-cover animate-slow-pan"
+                className={cn(
+                  "absolute left-0 top-0 h-full w-auto min-w-[120vw] max-w-none object-cover",
+                  animationReady && "animate-slow-pan"
+                )}
               />
             </div>
             {/* Title at bottom */}
