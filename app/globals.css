@@ -130,19 +130,18 @@
     display: none; /* Chrome, Safari, Opera */
   }
 
-  /* Slow pan animation from left to right */
+  /* Slow pan animation from left to right and back */
   .animate-slow-pan {
-    animation: slow-pan 45s linear infinite alternate;
-    animation-fill-mode: both;
-    transform: translateX(0); /* Initial position before animation loads */
+    animation: slow-pan 90s linear infinite;
+    transform: translateX(0);
   }
 }
 
 @keyframes slow-pan {
-  0% {
+  0%, 100% {
     transform: translateX(0);
   }
-  100% {
+  50% {
     transform: translateX(calc(-100% + 100vw));
   }
 }
